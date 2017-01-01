@@ -2,6 +2,7 @@
  	General
 -------------*/
 @import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 *{
 	margin: 0;
@@ -73,11 +74,11 @@ section{
 
 
 section h3.title{
-	color: #414a4f;
-	text-transform: capitalize;
+	color: rgb(98, 146, 237);
+	text-transform: uppercase;;
 	font-style: italic;
 	font-size: 48px;
-	font-weight: 500;
+	font-weight: 600;
 	margin-bottom: 35px;
 	text-align: left;
 }
@@ -170,11 +171,12 @@ header nav li:last-child{
 ----------------*/
 
 .hero{
+	padding: 0;
 	position: relative;
-	justify-content: flex-end;
+	justify-content: center;
 	min-height: 100vh;
 	text-align: left;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .hero .background-image{
@@ -189,52 +191,40 @@ header nav li:last-child{
 	opacity: 0.8;
 }
 
-.hero h1{
-	margin-bottom: 15px;
-}
-
-.hero-action-list {
-	padding: 5em;
-	padding-top: 8em;
-	font-style: italic;
-}
-
-.hero-action-list > li {
-	cursor: pointer;
-	padding: .5em;
-	font-size: 40px;
-	opacity: .6;
-}
-
-.hero-action-list > li:hover {
-	opacity: 1;
-}
-
-.hero .card {
-	position: relative;
-	/*align-self: flex-start;*/
-	padding: 60px 120px 60px 80px;
-	border: 1px solid silver;
-	box-shadow: -20px 20px 15px #ebebeb;
-}
-
-.hero .card .card-body {
-	padding-left: 20px;
-}
-
-.hero .card .card-background-image {
+.hero .background-image:after{
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-size: cover;
-	background-color: #FFFFFF;
-	z-index: -1;
-	opacity: 0.2;
-	background-image: url(../img/feedback/garden.jpg);
+	background-color: #000000;
+	opacity: 0.20;
 }
 
+.hero h1{
+	margin-bottom: 15px;
+}
+
+.hero .logo-splash {
+	color: white;
+	text-align: center;
+}
+
+.hero .logo-splash h1 {
+	font-size: 55px;
+	font-weight: 200;
+	color: white;
+	text-align: center;
+	/*letter-spacing: 70px;*/
+	font-family: 'Lobster', cursive;
+}
+
+.hero a.btn {
+	background-color: rgb(98, 146, 237);
+	padding: 16px 40px;
+	color: white;
+}
 
 
 /*--------------------
@@ -247,6 +237,7 @@ header nav li:last-child{
 	min-height: 100vh;
 	text-align: left;
 	align-items: flex-start;
+	/*border-bottom: 1px solid silver;*/
 }
 
 .about .background-image{
@@ -269,7 +260,7 @@ header nav li:last-child{
 	width: 100%;
 	height: 100%;
 	background-color: #FFFFFF;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .about h1{
@@ -525,7 +516,7 @@ footer{
 	align-items: center;
 	text-align: center;
 	color: #fff;
-	background-color: #414a4f;
+	background-color: rgb(98, 146, 237);;
 	padding: 60px 0;
 }
 
