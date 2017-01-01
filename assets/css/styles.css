@@ -171,7 +171,7 @@ header nav li:last-child{
 
 .hero{
 	position: relative;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	min-height: 100vh;
 	text-align: left;
 	align-items: flex-start;
@@ -210,17 +210,31 @@ header nav li:last-child{
 	opacity: 1;
 }
 
-.hero-button {
+.hero .card {
+	position: relative;
+	/*align-self: flex-start;*/
+	padding: 60px 120px 60px 80px;
+	border: 1px solid silver;
+	box-shadow: -20px 20px 15px #ebebeb;
+}
+
+.hero .card .card-body {
+	padding-left: 20px;
+}
+
+.hero .card .card-background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	align-items: center;
-	display: flex;
-	justify-content: center;
+	background-size: cover;
+	background-color: #FFFFFF;
+	z-index: -1;
+	opacity: 0.2;
+	background-image: url(../img/feedback/garden.jpg);
 }
 
-@media (max-width: 800px){
-
-}
 
 
 /*--------------------
@@ -262,11 +276,6 @@ header nav li:last-child{
 	margin-bottom: 15px;
 }
 
-.hero-action-list {
-	padding: 5em;
-	padding-top: 8em;
-	font-style: italic;
-}
 
 /*--------------------
  	Our Work Section
@@ -471,39 +480,36 @@ header nav li:last-child{
 ---------------------*/
 
 .contact{
-	background-color: #f7f7f7;
+	position: relative;
+	justify-content: flex-end;
+	/*min-height: 100vh;*/
+	text-align: left;
+	align-items: flex-start;
 }
 
-.contact form{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-
-	max-width: 800px;
-	width: 80%;
+.contact .card {
+	position: relative;
+	align-self: center;
+	padding: 60px 120px 60px 80px;
+	border: 1px solid silver;
+	box-shadow: -20px 20px 15px #ebebeb;
 }
 
-.contact form input{
-	padding: 15px;
-	flex: 1;
-	margin-right: 30px;
-	font-size: 18px;
-	color: #555;
+.contact .card .card-body {
+	padding-left: 20px;
 }
 
-.contact form .btn{
-	padding: 18px 42px;
-}
-
-
-@media (max-width: 800px){
-
-	.contact form input{
-		flex-basis: 100%;
-		margin: 0 0 20px 0;
-	}
-
+.contact .card .card-background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #FFFFFF;
+	z-index: -1;
+	opacity: 0.2;
+	background-image: url(../img/feedback/garden.jpg);
 }
 
 
