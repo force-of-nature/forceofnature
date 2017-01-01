@@ -106,6 +106,7 @@ ul.grid{
 	justify-content: center;
 }
 
+
 /*-------------
  	Header
 -------------*/
@@ -223,50 +224,6 @@ header nav li:last-child{
 }
 
 
-/*--------------------
- 	About Section
----------------------*/
-
-.about{
-	position: relative;
-	justify-content: flex-start;
-	min-height: 100vh;
-	text-align: left;
-	align-items: flex-start;
-}
-
-.about .background-image{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #FFFFFF;
-	z-index: -1;
-	opacity: 0.8;
-}
-
-.about .background-image:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #FFFFFF;
-	opacity: 0.8;
-}
-
-.about h1{
-	margin-bottom: 15px;
-}
-
-.hero-action-list {
-	padding: 5em;
-	padding-top: 8em;
-	font-style: italic;
-}
 
 /*--------------------
  	Our Work Section
@@ -394,30 +351,18 @@ header nav li:last-child{
 }
 
 .reviews .quote{
-	text-align: left;
+	text-align: center;
 	width: 80%;
     font-size: 22px;
     font-weight: 300;
+    line-height: 1.5;
     margin-bottom: 20px;
-		margin-left: 40px;
     padding: 0;
-}
-
-.reviews .quote-marks {
-	font-size: 38px;
-	font-weight: 600;
-	color: silver;
-	line-height: 22px;
 }
 
 .reviews .author{
     font-size: 18px;
-		font-weight: 200;
     margin-bottom: 50px;
-		margin-left: 60px;
-		font-style: italic;
-		text-align: right;
-		color: grey;
 }
 
 .reviews .author:last-child{
