@@ -284,16 +284,21 @@
 
            if (scrollTop > offset) {
                floatingHeader.css({
-                "visibility": "visible"
+                "visibility": "visible",
+                "background-color": "rgba(255, 255, 255, .8)"
                });
                getInTouchLogo.css('visibility', 'visible');
+               getInTouchLogo.css('opacity', 1);
                getInTouchMenu.css('visibility', 'visible');
+               getInTouchMenu.css('opacity', 1);
            } else {
                floatingHeader.css({
                 "visibility": "hidden"
                });
                getInTouchLogo.css('visibility', 'hidden');
+               getInTouchLogo.css('opacity', 0);
                getInTouchMenu.css('visibility', 'hidden');
+               getInTouchMenu.css('opacity', 0);
            };
        });
     }
