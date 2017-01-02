@@ -111,57 +111,23 @@ ul.grid{
  	Header
 -------------*/
 
-header{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
+.floatingHeader {
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+	padding: 10px;
 	width: 100%;
-	display: flex;
-	/*justify-content: space-between;*/
-	align-items: center;
-	/*color: #fff;*/
-	padding: 35px 100px 0;
+	background-color: rgba(255, 255, 255, .8);
+	z-index: 200;
 }
-
-header h2{
-	/*font-family: 'Quicksand', sans-serif;*/
-	break-after: always;
-}
-
-/*header nav{
-	display: flex;
-}
-
-header nav li{
-	margin: 0 15px;
-}
-
-header nav li:first-child{
-	margin-left: 0;
-}
-
-header nav li:last-child{
-	margin-right: 0;
-}*/
-
 
 
 @media (max-width: 1000px){
-	header{
-		padding: 20px 50px;
-	}
+
 }
 
 
 @media (max-width: 700px){
-	header{
-		flex-direction: column;
-	}
-
-	header h2{
-		margin-bottom: 15px;
-	}
 }
 
 
@@ -255,6 +221,38 @@ header nav li:last-child{
 
 .hero ul li:last-child{
 	margin-right: 0;
+}
+
+.hero .get-in-touch {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero .get-in-touch > * {
+	width: 200px;
+}
+
+.hero .get-in-touch .menu {
+	color: rgb(98, 146, 237);
+	padding: 7.5px 30px;
+	visibility: hidden;
+}
+
+.hero .get-in-touch .menu i {
+	float: right;
+	cursor: pointer;
+	font-size: 35px;
+}
+
+.hero .get-in-touch .logo {
+	padding-left: 30px;
+	visibility: hidden;
+}
+
+.hero .get-in-touch .logo img {
+	height: 50px;
+	cursor: pointer;
 }
 
 

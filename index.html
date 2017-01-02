@@ -9,14 +9,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="persist-area">
 
-	<!-- <header>
-		<h2 style="font-style: italic;">
-      <a href="#" style="font-size: 80px; font-weight: 900;">FORCE <span style="font-size: 50px;">OF</span> NATURE</a>
-      <p style="font-size: 40px; font-weight: 200; text-align: right;">Your garden specialists</p>
-    </h2>
-	</header> -->
+  <!-- <div class="persist-header floatingHeader">
+  </div> -->
 
 	<section class="hero">
 		<div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
@@ -26,30 +22,28 @@
       <h1>Gardens</h1>
       <br />
     </div>
-    <a id="get-in-touch-button" class="btn">
-      Get in touch
-    </a>
+    <div class="get-in-touch persist-header">
+      <div id="get-in-touch-logo" class="logo">
+        <img src="assets/img/fon_logo_blue.png" />
+      </div>
+      <a id="get-in-touch-button" class="btn">
+        Get in touch
+      </a>
+      <div id="get-in-touch-menu" class="menu">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
     <div id="contact-options" class="contact-options">
       <ul>
         <li><a href="tel:+64204628873"><i class="fa fa-phone"></i></a></li>
         <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-at"></i></a></li>
   			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook"></i></a></li>
-  			<li><a href="nz.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
   		</ul>
     </div>
-    <script>
-        var button = document.getElementById("get-in-touch-button");
-        var contactOptions = document.getElementById("contact-options");
-        var myFunction = () => {
-            contactOptions.style.visibility = 'visible';
-            contactOptions.style.opacity = 1;
-        };
-        button.addEventListener('click', myFunction);
-      </script>
 	</section>
 
-
   <section class="about">
+
 		<div class="background-image" style="background-image: url(assets/img/fon_background.png);"></div>
     <h3 class="title">About</h3>
     <p>
@@ -268,10 +262,84 @@
       <li><a href="tel:+64204628873"><i class="fa fa-phone"></i></a></li>
       <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-at"></i></a></li>
 			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="nz.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
 		</ul>
 	</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
 
+    function UpdateTableHeaders() {
+       $(".persist-area").each(function() {
+
+          //  var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+           var getInTouch = $('.get-in-touch');
+           var getInTouchLogo = $('#get-in-touch-logo');
+           var getInTouchMenu = $('#get-in-touch-menu');
+
+
+           var el             = $(this),
+               offset         = getInTouch.offset().top - 10,
+               scrollTop      = $(window).scrollTop(),
+               floatingHeader = $(".floatingHeader", this)
+
+           if (scrollTop > offset) {
+               floatingHeader.css({
+                "visibility": "visible"
+               });
+               getInTouchLogo.css('visibility', 'visible');
+               getInTouchMenu.css('visibility', 'visible');
+           } else {
+               floatingHeader.css({
+                "visibility": "hidden"
+               });
+               getInTouchLogo.css('visibility', 'hidden');
+               getInTouchMenu.css('visibility', 'hidden');
+           };
+       });
+    }
+
+    // DOM Ready
+    $(function() {
+
+       var clonedHeaderRow;
+
+       $(".persist-area").each(function() {
+           clonedHeaderRow = $(".persist-header", this);
+           clonedHeaderRow
+             .before(clonedHeaderRow.clone())
+             .css("width", clonedHeaderRow.width())
+             .addClass("floatingHeader");
+
+             var getInTouchButton = $('#get-in-touch-button');
+             getInTouchButton.attr("id","get-in-touch-button-hero");
+
+             var getInTouchLogo = $('#get-in-touch-logo');
+             getInTouchLogo.attr("id","get-in-touch-logo-hero");
+             var getInTouchMenu = $('#get-in-touch-menu');
+             getInTouchMenu.attr("id","get-in-touch-menu-hero");
+
+       });
+
+       $(window)
+        .scroll(UpdateTableHeaders)
+        .trigger("scroll");
+
+
+        var button = document.getElementById("get-in-touch-button-hero");
+        var contactOptions = document.getElementById("contact-options");
+        var myFunction = () => {
+            contactOptions.style.visibility = 'visible';
+            contactOptions.style.opacity = 1;
+        };
+        button.addEventListener('click', myFunction);
+
+    });
+
+
+
+
+
+  </script>
 </body>
 
 </html>
