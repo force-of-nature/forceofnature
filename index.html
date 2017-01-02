@@ -26,9 +26,26 @@
       <h1>Gardens</h1>
       <br />
     </div>
-    <a class="btn">
+    <a id="get-in-touch-button" class="btn">
       Get in touch
     </a>
+    <div id="contact-options" class="contact-options">
+      <ul>
+        <li><a href="tel:+64204628873"><i class="fa fa-phone"></i></a></li>
+        <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-at"></i></a></li>
+  			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook"></i></a></li>
+  			<li><a href="nz.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+  		</ul>
+    </div>
+    <script>
+        var button = document.getElementById("get-in-touch-button");
+        var contactOptions = document.getElementById("contact-options");
+        var myFunction = () => {
+            contactOptions.style.visibility = 'visible';
+            contactOptions.style.opacity = 1;
+        };
+        button.addEventListener('click', myFunction);
+      </script>
 	</section>
 
 
@@ -224,6 +241,7 @@
 	</section>
 
   <section class="contact">
+    <div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
     <h3 class="title">Contact</h3>
     <div class="card">
 
@@ -238,69 +256,19 @@
       <div class="card-body">
         <div class="item"><i class="fa fa-phone"></i><a href="tel:+64204628873">020 462 8873</a></div>
         <div class="item"><i class="fa fa-at"></i><a href="mailto:admin@aforceofnature.co.nz">admin@aforceofnature.co.nz</a></div>
-        <div class="item"><i class="fa fa-facebook-square"></i><a href="facebook.com/forceofnaturegardens">facebook.com/forceofnaturegardens</a></div>
+        <div class="item"><i class="fa fa-facebook-square"></i><a href="http://facebook.com/forceofnaturegardens">facebook.com/forceofnaturegardens</a></div>
       </div>
     </div>
 	</section>
 
-	<!--
-  <section class="features">
-		<h3 class="title">Features and services</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<hr>
-
-		<ul class="grid">
-			<li>
-				<i class="fa fa-camera-retro"></i>
-				<h4>Photography</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-			<li>
-				<i class="fa fa-cubes"></i>
-				<h4>Web Development</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-			<li>
-				<i class="fa fa-newspaper-o"></i>
-				<h4>Content Editing</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-		</div>
-	</section>
-
-  <section class="reviews">
-		<h3 class="title">What others say:</h3>
-
-		<p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-		<p class="author">— Patrick Farrell</p>
-
-		<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<p class="author">— George Smith</p>
-
-		<p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
-		<p class="author">— Kevin Blake</p>
-	</section>
-
-
-	<section class="contact">
-		<h3 class="title">Join our newsletter</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<hr>
-
-		<form>
-			<input type="email" placeholder="Email">
-			<a href="#" class="btn">Subscribe now</a>
-		</form>
-	</section> -->
-
 	<footer>
     <img class="logo" src="assets/img/fon_logo.png" />
+    <h1>Gardens</h1>
 		<ul>
-			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+      <li><a href="tel:+64204628873"><i class="fa fa-phone"></i></a></li>
+      <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-at"></i></a></li>
+			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="nz.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
 		</ul>
 	</footer>
 

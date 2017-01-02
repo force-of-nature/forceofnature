@@ -203,7 +203,7 @@ header nav li:last-child{
 }
 
 .hero h1{
-	margin-bottom: 15px;
+	margin-bottom: 50px;
 }
 
 .hero .logo-splash {
@@ -216,7 +216,6 @@ header nav li:last-child{
 	font-weight: 200;
 	color: white;
 	text-align: center;
-	/*letter-spacing: 70px;*/
 	font-family: 'Lobster', cursive;
 }
 
@@ -224,6 +223,38 @@ header nav li:last-child{
 	background-color: rgb(98, 146, 237);
 	padding: 16px 40px;
 	color: white;
+}
+
+.hero .contact-options {
+	transition: opacity 0.8s ease;
+	opacity: 0;
+	visibility: hidden;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .7);
+	text-align: center;
+}
+
+.hero ul{
+	display: flex;
+	margin: 15px 0;
+	font-size: 32px;
+	color: rgb(98, 146, 237);
+	font-size: 50px;
+}
+
+.hero ul li{
+	margin: 0 8px;
+}
+
+.hero ul li:first-child{
+	margin-left: 0;
+}
+
+.hero ul li:last-child{
+	margin-right: 0;
 }
 
 
@@ -473,9 +504,30 @@ header nav li:last-child{
 .contact{
 	position: relative;
 	justify-content: flex-end;
-	/*min-height: 100vh;*/
 	text-align: left;
 	align-items: flex-start;
+}
+
+.contact .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #FFFFFF;
+	z-index: -2;
+}
+
+.contact .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	opacity: 0.8;
 }
 
 .contact .card {
@@ -484,7 +536,7 @@ header nav li:last-child{
 	align-self: center;
 	padding: 20px 120px 20px 40px;
 	border: 1px solid silver;
-	box-shadow: -20px 20px 15px #ebebeb;
+	/*background-color: #ffffff;*/
 }
 
 .contact .card .card-body {
@@ -514,8 +566,18 @@ header nav li:last-child{
 	background-size: cover;
 	background-color: #FFFFFF;
 	z-index: -1;
-	opacity: 0.2;
 	background-image: url(../img/fon_background.png);
+}
+
+.contact .card .card-background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	opacity: 0.8;
 }
 
 
@@ -532,7 +594,7 @@ footer{
 	text-align: center;
 	color: #fff;
 	background-color: rgb(98, 146, 237);
-	padding: 40px 0;
+	padding: 40px 0 10px 0;
 }
 
 footer ul{
@@ -566,7 +628,18 @@ footer p a{
 
 footer .logo {
 	height: 35px;
+	margin-bottom: 2px;
+}
+
+footer h1 {
+	font-size: 15px;
+	font-weight: 200;
+	color: white;
+	text-align: center;
+	/*letter-spacing: 70px;*/
+	font-family: 'Lobster', cursive;
 	margin-bottom: 10px;
+
 }
 
 @media (max-width: 700px){
