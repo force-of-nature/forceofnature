@@ -33,11 +33,11 @@
         <i class="fa fa-bars"></i>
       </div>
     </div>
-    <div id="contact-options" class="contact-options">
+    <div id="contact-options-hero" class="contact-options">
       <ul>
-        <li><a href="tel:+64204628873"><i class="fa fa-phone"></i></a></li>
-        <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-at"></i></a></li>
-  			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
+        <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-envelope-square"></i></a></li>
+  			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
   		</ul>
     </div>
 	</section>
@@ -234,7 +234,7 @@
     </div>
 	</section>
 
-  <section class="contact">
+  <section class="contact" id="contact-section">
     <div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
     <h3 class="title">Contact</h3>
     <div class="card">
@@ -248,8 +248,8 @@
       <!-- <h4 class="title">Director</h4> -->
       <br />
       <div class="card-body">
-        <div class="item"><i class="fa fa-phone"></i><a href="tel:+64204628873">020 462 8873</a></div>
-        <div class="item"><i class="fa fa-at"></i><a href="mailto:admin@aforceofnature.co.nz">admin@aforceofnature.co.nz</a></div>
+        <div class="item"><i class="fa fa-phone-square"></i><a href="tel:+64204628873">020 462 8873</a></div>
+        <div class="item"><i class="fa fa-envelope-square"></i><a href="mailto:admin@aforceofnature.co.nz">admin@aforceofnature.co.nz</a></div>
         <div class="item"><i class="fa fa-facebook-square"></i><a href="http://facebook.com/forceofnaturegardens">facebook.com/forceofnaturegardens</a></div>
       </div>
     </div>
@@ -259,9 +259,9 @@
     <img class="logo" src="assets/img/fon_logo.png" />
     <h1>Gardens</h1>
 		<ul>
-      <li><a href="tel:+64204628873"><i class="fa fa-phone"></i></a></li>
-      <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-at"></i></a></li>
-			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
+      <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-envelope-square"></i></a></li>
+			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
 		</ul>
 	</footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -293,7 +293,8 @@
                getInTouchMenu.css('opacity', 1);
            } else {
                floatingHeader.css({
-                "visibility": "hidden"
+                "visibility": "hidden",
+                "background-color": "transparent"
                });
                getInTouchLogo.css('visibility', 'hidden');
                getInTouchLogo.css('opacity', 0);
@@ -330,8 +331,26 @@
         .trigger("scroll");
 
 
-        var button = document.getElementById("get-in-touch-button-hero");
-        var contactOptions = document.getElementById("contact-options");
+        var button = $("#get-in-touch-button-hero");
+        button.click(function(){
+          var contactOptions = $("#contact-options-hero");
+          contactOptions.css({
+            'visibility': 'visible',
+            'opacity': 1
+          });
+        })
+
+
+        var buttonHeader = $("#get-in-touch-button");
+        buttonHeader.click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact-section").offset().top
+            }, 1000);
+        });
+
+
+        var button = document.getElementById("get-in-touch-button");
+        var contactOptionsHerader = document.getElementById("contact-options");
         var myFunction = () => {
             contactOptions.style.visibility = 'visible';
             contactOptions.style.opacity = 1;
