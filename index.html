@@ -12,6 +12,9 @@
 <body class="persist-area">
 
 
+
+
+
   <aside id="menu-aside" class="menu-aside">
     <i id="menu-close" class="fa fa-times close-button"></i>
     <ul>
@@ -32,6 +35,11 @@
       </li>
     </ul>
   </aside>
+
+
+
+
+
 
 	<section class="home-section" id="home-section">
 		<div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
@@ -73,6 +81,11 @@
     </div>
 	</section>
 
+
+
+
+
+
   <section class="services-section" id="services-section">
     <h3 class="title">Services</h3>
     <p>
@@ -83,125 +96,179 @@
     <ul class="grid">
 
       <li class="service">
-        <h2 class="service-title">Plant selection</h2>
-        <div class="service-detail">
-          <div class="service-image" style="background-image: url(assets/img/services/plant-selection.png);"></div>
-          <p class="service-text">Plants are amazing! They can live in extreme environments and harsh conditions all over the planet. They provide us with the essential elements of life such as food and oxygen to breathe as well as some of the most beautiful sights imaginable.
+        <h2 class="service-title" onClick="showServiceDetail('plant-selection');">
+          <i style="color: #8484CB;" id="plant-selection-caret" class="fa fa-caret-right"></i>&nbsp;
+          Plant selection
+        </h2>
+        <div class="service-detail" id="plant-selection-detail">
+          <img class="service-image" src="assets/img/services/plant-selection.png" />
+          <p class="service-text">
+            Plants are amazing! They can live in extreme environments and harsh conditions all over the planet. They provide us with the essential elements of life such as food and oxygen to breathe as well as some of the most beautiful sights imaginable.
             We will assist with suitable plant selections to enable them to flourish in their desired location and ensure your garden succeeds in reaching it's full potential.
           </p>
         </div>
       </li>
 
-      <li class="large service-description left" >
-        <h2 class="sub-title">Pruning and training</h2>
-        <br />
-        <p>Many plants and trees require specific pruning techniques to keep them in optimal health, at the desired shape or height, produce flowers and bushy thick growth or produce fruit.  Incorrect pruning and a lack of training can result in reduced crops, increased risks of pests and diseases and even plant failure/death.
-          We are skilled in the various techniques required and want to see your garden succeed.
-        </p>
-      </li>
-      <li class="small service-image" style="background-image: url(assets/img/services/pruning-and-training.png);"></li>
-
-      <li class="small service-image" style="background-image: url(assets/img/services/attracting-birds.webp);"></li>
-      <li class="large service-description right">
-        <h2 class="sub-title">Attracting birds, bees, butterflies and other wildlife</h2>
-        <br />
-        <p>
-          FORCE OF NATURE is passionate about the environment here on theHibiscus Coast. Being surrounded by bird sanctuaries, residential gardens are the perfect place to encourage native birds and butterflies using specific trees and shrubs, which offer nectar (important for bees too), berries and shelter.
-          We will assist in selecting, planting and caring for these important food and shelter plants and turn your property into a flourishing oasis.
-        </p>
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('pruning-and-training');">
+          <i style="color: #A17BC7" id="pruning-and-training-caret" class="fa fa-caret-right"></i>&nbsp;
+          Pruning and training
+        </h2>
+        <div class="service-detail" id="pruning-and-training-detail">
+          <img class="service-image" src="assets/img/services/pruning-and-training.png" />
+          <p class="service-text">
+            Many plants and trees require specific pruning techniques to keep them in optimal health, at the desired shape or height, produce flowers and bushy thick growth or produce fruit.  Incorrect pruning and a lack of training can result in reduced crops, increased risks of pests and diseases and even plant failure/death.
+            We are skilled in the various techniques required and want to see your garden succeed.
+          </p>
+        </div>
       </li>
 
-      <li class="large service-description left" >
-        <h2 class="sub-title">Plant nutrition</h2>
-        <br />
-        <p>
-          For plants and trees to succeed in any garden they require the correct nutrients needed  for root development, leaf growth, fruit and flower production and the internal processes which they carry out daily and seasonally.
-          FORCE OF NATURE are fully trained in the nutrtional requirements of various trees and shrubs and we will manage these to enable them to reach their full potential.
-        </p>
-      </li>
-      <li class="small service-image" style="background-image: url(assets/img/services/plant-nutrition.png);"></li>
-
-      <li class="small service-image" style="background-image: url(assets/img/services/lawn.png);"></li>
-      <li class="large service-description right">
-        <h2 class="sub-title">Lawn installation and on going care</h2>
-        <br />
-        <p>
-          Lawn areas are an important design feature and require skill and technique to keep in constant good health for both use and aesthetics.
-          FORCE OF NATURE will install, renovate and maintain top lawn standards, managing pests, diseases and weeds.
-        </p>
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('attracting-birds');">
+          <i style="color: #D17BBC" id="attracting-birds-caret" class="fa fa-caret-right"></i>&nbsp;
+            Attracting birds, bees, butterflies and other wildlife
+        </h2>
+        <div class="service-detail" id="attracting-birds-detail">
+          <img class="service-image" src="assets/img/services/attracting-birds.webp" />
+          <p class="service-text">
+            FORCE OF NATURE is passionate about the environment here on theHibiscus Coast. Being surrounded by bird sanctuaries, residential gardens are the perfect place to encourage native birds and butterflies using specific trees and shrubs, which offer nectar (important for bees too), berries and shelter.
+            We will assist in selecting, planting and caring for these important food and shelter plants and turn your property into a flourishing oasis.
+          </p>
+        </div>
       </li>
 
-      <li class="large service-description left" >
-        <h2 class="sub-title">Space conscious design</h2>
-        <br />
-        <p>
-          Stunning designs and green training techniques can be used to accentuate or disguise walls and fence lines. Areas which capture excessive heat over summer and appear hard and life barren can be transformed into a living feature or extend existing sculptural designs used in a building's architecture.
-        </p>
-      </li>
-      <li class="small service-image" style="background-image: url(assets/img/services/space-conscious-design.png);"></li>
-
-      <li class="small service-image" style="background-image: url(assets/img/services/edible-plants.png);"></li>
-      <li class="large service-description right">
-        <h2 class="sub-title">Edible plants and fruiting plants</h2>
-        <br />
-        <p>
-          Grow your own supplies of fresh vegetables, herbs and superfoods and eat straight off the plant. Have your food grown your way, avoiding nasty chemicals used in commercial growing.
-          Invest in plants and avoid expensive food prices while helping reduce transport carbon footprints.
-        </p>
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('plant-nutrition');">
+          <i style="color: #F590A0" id="plant-nutrition-caret" class="fa fa-caret-right"></i>&nbsp;
+          Plant nutrition
+        </h2>
+        <div class="service-detail" id="plant-nutrition-detail">
+          <img class="service-image" src="assets/img/services/plant-nutrition.png" />
+          <p class="service-text">
+            For plants and trees to succeed in any garden they require the correct nutrients needed  for root development, leaf growth, fruit and flower production and the internal processes which they carry out daily and seasonally.
+            FORCE OF NATURE are fully trained in the nutrtional requirements of various trees and shrubs and we will manage these to enable them to reach their full potential.
+          </p>
+        </div>
       </li>
 
-      <li class="large service-description left" >
-        <h2 class="sub-title">Hedge trimming and health</h2>
-        <br />
-        <p>
-          When hedges have been cared for properly they not only look great, they increase privacy and value of the property. All too often hedges are left to creep out or up and get to a stage when extreme, unsightly cutback jobs or costly removal and replant is required.
-          With correct training, pruning and fertilising hedges can be a great feature and investment in a property's desirability.
-        </p>
-      </li>
-      <li class="small service-image" style="background-image: url(assets/img/services/hedge-trimming.png);"></li>
-
-      <li class="small service-image" style="background-image: url(assets/img/services/lawn-mowing.png);"></li>
-      <li class="large service-description right">
-        <h2 class="sub-title">Lawn mowing</h2>
-        <br />
-        <p>
-          Ever wondered why every property doesn't have a great looking lawn??
-          Lawn mowing is one of the most important actions in the garden to keep it looking healthy and lush. It is important to mow lawns at correct frequencies and heights and have clean, sharp equipment to avoid introducing fungal diseases, weed seeds and shredding of the leaf blades.
-        </p>
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('lawn');">
+          <i style="color: #FFC196" id="lawn-caret" class="fa fa-caret-right"></i>&nbsp;
+          Lawn installation and on going care
+        </h2>
+        <div class="service-detail" id="lawn-detail">
+          <img class="service-image" src="assets/img/services/lawn.png" />
+          <p class="service-text">
+            Lawn areas are an important design feature and require skill and technique to keep in constant good health for both use and aesthetics.
+            FORCE OF NATURE will install, renovate and maintain top lawn standards, managing pests, diseases and weeds.
+          </p>
+        </div>
       </li>
 
-      <li class="large service-description left" >
-        <h2 class="sub-title">Creating a stylish entrance</h2>
-        <br />
-        <p>
-          Correct plant selection to compliment a property's architecture and design is a key element in creating an entrance that leaves a lasting impression.
-          Accentuate your property by adding small trees, shrubs, hedges or climbers to add instant grandeur, colour or seasonal interest. This can begin from the front gate, the driveway or in pots by the front door.
-        </p>
-      </li>
-      <li class="small service-image" style="background-image: url(assets/img/services/creating-stylish-entrance.png);"></li>
-
-      <li class="small service-image" style="background-image: url(assets/img/services/lush-outdoor-rooms.png);"></li>
-      <li class="large service-description right">
-        <h2 class="sub-title">Lush 'Outdoor Rooms'</h2>
-        <br />
-        <p>
-          Outdoor areas can easily be transformed into 'Outdoor rooms' enhancing the indoor-outdoor flow. Perfect for entertaining on warm, clear nights or simply relaxing in your own tranquil oasis.
-          The use of fragrant plant species is another way to enhance your garden experience.
-        </p>
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('space-conscious-design');">
+          <i style="color: #FFD896" id="space-conscious-design-caret" class="fa fa-caret-right"></i>&nbsp;
+          Space conscious design
+        </h2>
+        <div class="service-detail" id="space-conscious-design-detail">
+          <img class="service-image" src="assets/img/services/space-conscious-design.png" />
+          <p class="service-text">
+            Stunning designs and green training techniques can be used to accentuate or disguise walls and fence lines. Areas which capture excessive heat over summer and appear hard and life barren can be transformed into a living feature or extend existing sculptural designs used in a building's architecture.
+          </p>
+        </div>
       </li>
 
-      <li class="large service-description left" >
-        <h2 class="sub-title">Potted plants, trees and palms</h2>
-        <br />
-        <p>
-          Our team can ensure your potted plants are kept healthy and add aesthetic value to hard surfaced areas, or grow plant specimens until large enough to put in the garden.
-          Potted plants are a great feature which can be relocated when areas require maximisation of space, to hide service areas such as pool sheds and equipment or rubbish bin storage areas.
-        </p>
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('edible-plants');">
+          <i style="color: #FFE896" id="edible-plants-caret" class="fa fa-caret-right"></i>&nbsp;
+          Edible plants and fruiting plants
+        </h2>
+        <div class="service-detail" id="edible-plants-detail">
+          <img class="service-image" src="assets/img/services/edible-plants.png" />
+          <p class="service-text">
+            Grow your own supplies of fresh vegetables, herbs and superfoods and eat straight off the plant. Have your food grown your way, avoiding nasty chemicals used in commercial growing.
+            Invest in plants and avoid expensive food prices while helping reduce transport carbon footprints.
+          </p>
+        </div>
       </li>
-      <li class="small service-image" style="background-image: url(assets/img/services/potted-plants.webp);"></li>
 
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('hedge-trimming');">
+          <i style="color: #FFF996" id="hedge-trimming-caret" class="fa fa-caret-right"></i>&nbsp;
+          Hedge trimming and health
+        </h2>
+        <div class="service-detail" id="hedge-trimming-detail">
+          <img class="service-image" src="assets/img/services/hedge-trimming.png" />
+          <p class="service-text">
+            When hedges have been cared for properly they not only look great, they increase privacy and value of the property. All too often hedges are left to creep out or up and get to a stage when extreme, unsightly cutback jobs or costly removal and replant is required.
+            With correct training, pruning and fertilising hedges can be a great feature and investment in a property's desirability.
+          </p>
+        </div>
+      </li>
+
+
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('lawn-mowing');">
+          <i style="color: #E2F590" id="lawn-mowing-caret" class="fa fa-caret-right"></i>&nbsp;
+          Lawn mowing
+        </h2>
+        <div class="service-detail" id="lawn-mowing-detail">
+          <img class="service-image" src="assets/img/services/lawn-mowing.png" />
+          <p class="service-text">
+            Ever wondered why every property doesn't have a great looking lawn??
+            Lawn mowing is one of the most important actions in the garden to keep it looking healthy and lush. It is important to mow lawns at correct frequencies and heights and have clean, sharp equipment to avoid introducing fungal diseases, weed seeds and shredding of the leaf blades.
+          </p>
+        </div>
+      </li>
+
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('creating-stylish-entrance');">
+          <i style="color: #98DA80" id="creating-stylish-entrance-caret" class="fa fa-caret-right"></i>&nbsp;
+          Creating a stylish entrance
+        </h2>
+        <div class="service-detail" id="creating-stylish-entrance-detail">
+          <img class="service-image" src="assets/img/services/creating-stylish-entrance.png" />
+          <p class="service-text">
+            Correct plant selection to compliment a property's architecture and design is a key element in creating an entrance that leaves a lasting impression.
+            Accentuate your property by adding small trees, shrubs, hedges or climbers to add instant grandeur, colour or seasonal interest. This can begin from the front gate, the driveway or in pots by the front door.
+          </p>
+        </div>
+      </li>
+
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('lush-outdoor-rooms');">
+          <i style="color: #66AE91" id="lush-outdoor-rooms-caret" class="fa fa-caret-right"></i>&nbsp;
+          Lush 'Outdoor Rooms'
+        </h2>
+        <div class="service-detail" id="lush-outdoor-rooms-detail">
+          <img class="service-image" src="assets/img/services/lush-outdoor-rooms.png" />
+          <p class="service-text">
+            Outdoor areas can easily be transformed into 'Outdoor rooms' enhancing the indoor-outdoor flow. Perfect for entertaining on warm, clear nights or simply relaxing in your own tranquil oasis.
+            The use of fragrant plant species is another way to enhance your garden experience.
+          </p>
+        </div>
+      </li>
+
+      <li class="service">
+        <h2 class="service-title" onClick="showServiceDetail('potted-plants');">
+          <i style="color: #6687A6" id="potted-plants-caret" class="fa fa-caret-right"></i>&nbsp;
+          Potted plants, trees and palms
+        </h2>
+        <div class="service-detail" id="potted-plants-detail">
+          <img class="service-image" src="assets/img/services/potted-plants.webp" />
+          <p class="service-text">
+            Our team can ensure your potted plants are kept healthy and add aesthetic value to hard surfaced areas, or grow plant specimens until large enough to put in the garden.
+            Potted plants are a great feature which can be relocated when areas require maximisation of space, to hide service areas such as pool sheds and equipment or rubbish bin storage areas.
+          </p>
+        </div>
+      </li>
     </div>
   </section>
+
+
+
+
+
 
   <section class="feedback-section" id="feedback-section">
     <div class="background-image" style="background-image: url(assets/img/feedback/garden.jpg);"></div>
@@ -242,7 +309,11 @@
   </section>
 
 
-  <section class="about" id="about-section">
+
+
+
+
+  <section class="about-section" id="about-section">
 
 		<div class="background-image" style="background-image: url(assets/img/fon_background.png);"></div>
     <h3 class="title">About</h3>
@@ -265,7 +336,12 @@
     </p>
   </section>
 
-  <section class="contact" id="contact-section">
+
+
+
+
+
+  <section class="contact-section" id="contact-section">
     <div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
     <h3 class="title">Contact</h3>
     <div class="card-wrapper">
@@ -283,6 +359,11 @@
     </div>
 	</section>
 
+
+
+
+
+
 	<footer>
     <img class="logo" src="assets/img/fon_logo.png" />
     <h1>Gardens</h1>
@@ -292,6 +373,10 @@
 			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
 		</ul>
 	</footer>
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>
     var menuOpen = false;
@@ -431,8 +516,24 @@
 
         }
 
+
+        window.showServiceDetail = function (serviceName) {
+          var detailSection = $('#' + serviceName + '-detail');
+
+          var visible = detailSection.css('display') === 'block';
+
+          var caret = $('#' + serviceName + '-caret');
+          caret.attr('class', 'fa fa-caret-' + (visible ? 'right' : 'down'));
+
+          detailSection.css('display', visible ? 'none' : 'block');
+
+
+        }
+
     });
   </script>
+
+
 </body>
 
 </html>

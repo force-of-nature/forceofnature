@@ -95,17 +95,16 @@ section h2.sub-title{
 section p{
 	max-width: 800px;
 	text-align: left;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 	padding: 0 20px;
 	line-height: 2;
 }
 
-ul.grid{
+/*ul.grid{
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+	justify-content: flex-start;
+}*/
 
 .menu-aside {
 	position: fixed;
@@ -340,60 +339,58 @@ ul.grid{
 	cursor: pointer;
 }
 
+
+
+
 /*--------------------
  	Services Section
 ---------------------*/
 
+.services-section .grid {
+	margin-left: 30px;
+	justify-content: flex-start;
+}
+
 .services-section .grid li {
-	padding: 20px;
-	height: 350px;
-	border-radius: 3px;
-
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
+	flex-direction: column;
 }
 
-.services-section .grid li .service-image{
-
-	background-color: #333;
+.services-section .grid .service .service-detail {
+	display: none;
+	padding-left: 20px;
 }
 
-.services-section .grid .left {
-	text-align: right;
+.services-section .grid .service .service-detail .service-image{
+	float: right;
+	padding: 10px;
+	min-width: 220px;
 }
 
-.services-section .grid .left p {
-	text-align: right;
+.services-section .grid .service .service-title {
+	color: #414a4f;
+	text-transform: capitalize;
+	font-size: 26px;
+	font-weight: 200;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	cursor: pointer;
 }
 
-.services-section .grid .right {
-	text-align: left;
-}
-
-.services-section .grid .right p {
-	text-align: left;
-}
-
-.services-section .grid .service-description{
-
-}
-
-.services-section .grid li.small{
-	flex-basis: 40%;
-}
-
-.services-section .grid li.large{
-	flex-basis: 60%;
+.services-section .grid .service .service-title i{
+	width: 10px;
+	font-size: 20px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	color: silver;
 }
 
 
-@media (max-width: 1000px){
-
-	.services-section .grid li.small,
-	.services-section .grid li.large{
-		flex-basis: 100%;
+@media (max-width: 600px){
+	.services-section .grid .service .service-detail .service-image{
+		width: 100%;
+		padding: 10px;
 	}
+
 
 }
 
@@ -483,7 +480,7 @@ ul.grid{
  	About Section
 ---------------------*/
 
-.about{
+.about-section{
 	position: relative;
 	justify-content: flex-start;
 	min-height: 100vh;
@@ -491,7 +488,7 @@ ul.grid{
 	align-items: flex-start;
 }
 
-.about .background-image{
+.about-section .background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -503,7 +500,7 @@ ul.grid{
 	opacity: 0.8;
 }
 
-.about .background-image:after{
+.about-section .background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -514,18 +511,16 @@ ul.grid{
 	opacity: 0.7;
 }
 
-.about h1{
+.about-section h1{
 	margin-bottom: 15px;
 }
-
-
 
 
 /*---------------------
  	Contact Section
 ---------------------*/
 
-.contact{
+.contact-section{
 	height: calc(100vh - 168px);
 	position: relative;
 	justify-content: flex-start;
@@ -533,7 +528,7 @@ ul.grid{
 	align-items: flex-start;
 }
 
-.contact .background-image{
+.contact-section .background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -544,7 +539,7 @@ ul.grid{
 	z-index: -2;
 }
 
-.contact .background-image:after{
+.contact-section .background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -555,14 +550,14 @@ ul.grid{
 	opacity: 0.8;
 }
 
-.contact .card-wrapper {
+.contact-section .card-wrapper {
 	height: 100%;
 	display: flex;
 	align-self: center;
 	justify-content: center;
 }
 
-.contact .card {
+.contact-section .card {
 	font-size: 14px;
 	position: relative;
 	align-self: center;
@@ -571,29 +566,29 @@ ul.grid{
 	/*background-color: #ffffff;*/
 }
 
-.contact .card .card-body {
+.contact-section .card .card-body {
 	padding: 5px 10px;
 }
 
-.contact .card .card-body .item {
+.contact-section .card .card-body .item {
 	padding: 3px;
 }
 
-.contact .card .card-body .item i {
+.contact-section .card .card-body .item i {
 	color: silver;
 	margin-right: 10px;
 }
 
 
-.contact .card .logo {
+.contact-section .card .logo {
 	width: 300px;
 }
 
-.contact .card .title {
+.contact-section .card .title {
 	margin-bottom: 10px;
 }
 
-.contact .card .card-background-image {
+.contact-section .card .card-background-image {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -605,7 +600,7 @@ ul.grid{
 	background-image: url(../img/fon_background.png);
 }
 
-.contact .card .card-background-image:after{
+.contact-section .card .card-background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
