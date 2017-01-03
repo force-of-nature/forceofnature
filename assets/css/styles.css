@@ -62,23 +62,6 @@ section{
 	padding: 120px 100px;
 }
 
-@media (max-width: 1000px){
-
-	section{
-		padding: 100px 50px;
-	}
-
-}
-
-@media (max-width: 600px){
-
-	section{
-		padding: 80px 30px;
-	}
-
-}
-
-
 section h3.title{
 	color: rgb(98, 146, 237);
 	text-transform: uppercase;;
@@ -105,12 +88,6 @@ section p{
 	padding: 0 20px;
 	line-height: 2;
 }
-
-/*ul.grid{
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-}*/
 
 .menu-aside {
 	position: fixed;
@@ -150,6 +127,32 @@ section p{
 	opacity: 1;
 }
 
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 50px 30px;
+	}
+
+	section h3.title{
+		color: rgb(98, 146, 237);
+		text-transform: uppercase;;
+		font-style: italic;
+		font-size: 38px;
+		font-weight: 600;
+		margin-bottom: 35px;
+		text-align: left;
+	}
+
+}
+
 
 /*-------------
  	Header
@@ -168,7 +171,7 @@ section p{
 }
 
 
-@media (max-width: 415px){
+@media (max-width: 600px){
 
 	.menu-aside {
 		padding: 12px 20px 0 20px;
@@ -183,20 +186,9 @@ section p{
 		font-size: 35px;
 	}
 
-	.menu-aside ul li {
-	}
-
-	.menu-aside .close-button {
-	}
-
-
-
 	.floatingHeader {
 		transition: none !important;;
 	}
-
-
-
 
 }
 
@@ -369,7 +361,7 @@ section p{
 	cursor: pointer;
 }
 
-@media (max-width: 415px){
+@media (max-width: 600px){
 	body{
 		overflow-x: hidden;
 	}
@@ -464,12 +456,16 @@ section p{
 
 .services-section .grid .service .service-title {
 	color: #414a4f;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	font-size: 26px;
 	font-weight: 200;
 	margin-top: 12px;
 	margin-bottom: 12px;
 	cursor: pointer;
+}
+
+.services-section .grid .service .service-title .short-name {
+	display: none;
 }
 
 .services-section .grid .service .service-title i{
@@ -482,15 +478,38 @@ section p{
 
 
 @media (max-width: 600px){
+
+	.services-section .grid {
+		margin-left: 0;
+	}
+
 	.services-section .grid .service .service-detail .service-image{
 		width: 100%;
 		padding: 10px;
 		box-sizing: border-box;
 	}
 
+	.services-section .grid .service .service-title {
+		font-size: 18px;
+		font-weight: 600;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.services-section .grid .service .service-title i{
+		margin-bottom: 5px;
+	}
+
+	.services-section .grid .service .service-title .short-name {
+		display: block;
+	}
+
+	.services-section .grid .service .service-title .long-name {
+		display: none;
+	}
+
 
 }
-
 
 
 /*--------------------
