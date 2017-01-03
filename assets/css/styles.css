@@ -140,7 +140,7 @@ ul.grid{
 .hero{
 	padding: 0;
 	position: relative;
-	justify-content: center;
+	justify-content: space-between;;
 	min-height: 100vh;
 	text-align: left;
 	align-items: center;
@@ -167,6 +167,29 @@ ul.grid{
 	height: 100%;
 	background-color: #000000;
 	opacity: 0.20;
+}
+
+.hero-splash-container {
+	width: 100%;
+	justify-content: center;
+}
+
+.hero .hero-menu-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.hero .hero-menu-container .menu {
+	width: 200px;
+	color: white;
+	font-size: 35px;
+	padding: 17.5px 40px;
+}
+
+.hero .hero-menu-container .menu i {
+	float: right;
 }
 
 .hero h1{

@@ -11,34 +11,45 @@
 
 <body class="persist-area">
 
-  <!-- <div class="persist-header floatingHeader">
-  </div> -->
+
+  <aside></aside>
 
 	<section class="hero">
 		<div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
 
-    <div class="logo-splash">
-      <img src="assets/img/fon_logo.png" />
-      <h1>Gardens</h1>
-      <br />
-    </div>
-    <div class="get-in-touch persist-header">
-      <div id="get-in-touch-logo" class="logo">
-        <img src="assets/img/fon_logo_blue.png" />
-      </div>
-      <a id="get-in-touch-button" class="btn">
-        Get in touch
-      </a>
-      <div id="get-in-touch-menu" class="menu">
+    <div class="hero-menu-container">
+      <div id="hero-menu" class="menu">
         <i class="fa fa-bars"></i>
       </div>
     </div>
-    <div id="contact-options-hero" class="contact-options">
-      <ul>
-        <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
-        <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-envelope-square"></i></a></li>
-  			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
-  		</ul>
+
+    <div class="hero-splash-container">
+      <div class="logo-splash">
+        <img src="assets/img/fon_logo.png" />
+        <h1>Gardens</h1>
+        <br />
+      </div>
+      <div class="get-in-touch persist-header">
+        <div id="get-in-touch-logo" class="logo">
+          <img src="assets/img/fon_logo_blue.png" />
+        </div>
+        <a id="get-in-touch-button" class="btn">
+          Get in touch
+        </a>
+        <div id="get-in-touch-menu" class="menu">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <div id="contact-options-hero" class="contact-options">
+        <ul>
+          <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
+          <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-envelope-square"></i></a></li>
+    			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
+    		</ul>
+      </div>
+    </div>
+
+    <div class="hero-footer">
     </div>
 	</section>
 
@@ -266,16 +277,12 @@
 	</footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>
-
-    function UpdateTableHeaders() {
+    function UpdateHeader() {
        $(".persist-area").each(function() {
-
-          //  var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
            var getInTouch = $('.get-in-touch');
            var getInTouchLogo = $('#get-in-touch-logo');
            var getInTouchMenu = $('#get-in-touch-menu');
-
 
            var el             = $(this),
                offset         = getInTouch.offset().top - 10,
@@ -327,7 +334,7 @@
        });
 
        $(window)
-        .scroll(UpdateTableHeaders)
+        .scroll(UpdateHeader)
         .trigger("scroll");
 
 
@@ -340,14 +347,12 @@
           });
         })
 
-
         var buttonHeader = $("#get-in-touch-button");
         buttonHeader.click(function() {
             $('html, body').animate({
                 scrollTop: $("#contact-section").offset().top
             }, 1000);
         });
-
 
         var button = document.getElementById("get-in-touch-button");
         var contactOptionsHerader = document.getElementById("contact-options");
@@ -358,11 +363,6 @@
         button.addEventListener('click', myFunction);
 
     });
-
-
-
-
-
   </script>
 </body>
 
