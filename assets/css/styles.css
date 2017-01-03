@@ -13,6 +13,8 @@
 html{
 	font: normal 16px sans-serif;
 	color: #555;
+	overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 body{
