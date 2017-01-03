@@ -551,11 +551,11 @@ section p{
 .feedback-section .quote{
 	text-align: left;
 	width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 20px;
-		margin-left: 40px;
-    padding: 0;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 20px;
+	margin-left: 40px;
+  padding: 0;
 }
 
 .feedback-section .quote-marks {
@@ -579,14 +579,24 @@ section p{
     margin-bottom: 0;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px){
 
 	.feedback-section .quote{
-		font-size: 20px;
+		font-size: 13px;
+		margin-left: 20px;
+	}
+
+	.feedback-section .quote-marks {
+		font-size: 32px;
+		font-weight: 600;
+		color: silver;
+		line-height: 13px;
 	}
 
 	.feedback-section .author{
-	    font-size: 16px;
+	    font-size: 14px;
+			align-self: flex-end;
+			padding-right: 60px;
 	}
 
 }
