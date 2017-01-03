@@ -206,7 +206,7 @@ ul.grid{
 	width: 100%;
 	height: 100%;
 	background-color: #000000;
-	opacity: 0.20;
+	opacity: 0.30;
 }
 
 .hero-splash-container {
@@ -249,11 +249,21 @@ ul.grid{
 }
 
 .hero .logo-splash h1 {
-	font-size: 55px;
+	font-size: 100px;
+	line-height: 50px;
+	font-weight: 100;
+	color: white;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+
+.hero .logo-splash h3 {
+	font-size: 40px;
 	font-weight: 200;
 	color: white;
 	text-align: center;
 	font-family: 'Lobster', cursive;
+	margin: 80px 0 50px 0;
 }
 
 .hero a.btn {
@@ -380,7 +390,7 @@ ul.grid{
 	background-color: #fff;
 }
 
-.our-work .grid li {
+.services-section .grid li {
 	padding: 20px;
 	height: 350px;
 	border-radius: 3px;
@@ -390,44 +400,44 @@ ul.grid{
 	background-position: center;
 }
 
-.our-work .grid li .service-image{
+.services-section .grid li .service-image{
 
 	background-color: #333;
 }
 
-.our-work .grid .left {
+.services-section .grid .left {
 	text-align: right;
 }
 
-.our-work .grid .left p {
+.services-section .grid .left p {
 	text-align: right;
 }
 
-.our-work .grid .right {
+.services-section .grid .right {
 	text-align: left;
 }
 
-.our-work .grid .right p {
+.services-section .grid .right p {
 	text-align: left;
 }
 
-.our-work .grid .service-description{
+.services-section .grid .service-description{
 
 }
 
-.our-work .grid li.small{
+.services-section .grid li.small{
 	flex-basis: 40%;
 }
 
-.our-work .grid li.large{
+.services-section .grid li.large{
 	flex-basis: 60%;
 }
 
 
 @media (max-width: 1000px){
 
-	.our-work .grid li.small,
-	.our-work .grid li.large{
+	.services-section .grid li.small,
+	.services-section .grid li.large{
 		flex-basis: 100%;
 	}
 
