@@ -336,7 +336,18 @@ section p{
 
 .home-section .get-in-touch .logo img {
 	height: 50px;
-	cursor: pointer;
+		cursor: pointer;
+}
+
+@media (max-width: 415px){
+	body{
+		overflow-x: hidden;
+	}
+
+	.home-section .logo-splash img{
+		width: 300px;
+	}
+
 }
 
 
@@ -353,6 +364,10 @@ section p{
 
 .services-section .grid li {
 	flex-direction: column;
+}
+
+.services-section .grid .service {
+		overflow: hidden;
 }
 
 .services-section .grid .service .service-detail {
@@ -609,6 +624,14 @@ section p{
 	height: 100%;
 	background-color: #FFFFFF;
 	opacity: 0.8;
+}
+
+
+@media (max-width: 415px){
+	.contact-section {
+		overflow: hidden;
+	}
+
 }
 
 
