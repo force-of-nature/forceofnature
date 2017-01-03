@@ -343,7 +343,7 @@ section p{
 
 .home-section .get-in-touch .logo img {
 	height: 50px;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 @media (max-width: 415px){
@@ -351,8 +351,50 @@ section p{
 		overflow-x: hidden;
 	}
 
+	.home-section .home-menu-container .menu {
+		width: 100px;
+		padding: 17.5px 20px;
+	}
+
 	.home-section .logo-splash img{
-		width: 300px;
+		width: 350px;
+	}
+
+	.home-section .logo-splash h1 {
+		font-size: 40px;
+		line-height: 25px;
+		margin-bottom: 30px;
+	}
+
+	.home-section .logo-splash h3 {
+		font-size: 30px;
+		margin: 0 50px 40px 50px;
+	}
+
+	.home-section .get-in-touch > * {
+		width: 60px;
+	}
+
+	.home-section .get-in-touch a.btn {
+		width: 100px;
+		font-size: 10px;
+		padding: 8px 5px;
+		height: 30px;
+		margin-top: 10px;
+	}
+
+	.home-section .get-in-touch .logo {
+		padding-left: 10px;
+	}
+
+	.home-section .get-in-touch .logo img {
+		margin-top: 10px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+	.home-section .get-in-touch .menu {
+		padding: 7.5px 10px;
 	}
 
 }
