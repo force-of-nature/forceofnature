@@ -109,7 +109,6 @@ ul.grid{
 
 .menu-aside {
 	position: fixed;
-	padding: 5px 40px 0 20px;
 	width: 300px;
 	height: 100vh;
 	color: rgb(98, 146, 237);
@@ -118,11 +117,16 @@ ul.grid{
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 60px;
-	background-color: rgba(255, 255, 255, 0.8);
 	right: -300px;
 	transition: right 0.5 ease;
 	text-align: right;
 	z-index: 900;
+}
+
+.menu-aside ul {
+	height: 100%;
+	padding: 5px 40px 0 20px;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .menu-aside ul li {
@@ -136,6 +140,8 @@ ul.grid{
 }
 
 .menu-aside .close-button {
+	margin-right: 40px;
+	height: 64px;
 	cursor: pointer;
 	opacity: 0.8;
 	transition: opacity .5s ease;

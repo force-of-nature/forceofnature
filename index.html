@@ -296,6 +296,8 @@
 	</footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>
+    var menuOpen = false;
+
     function UpdateHeader() {
        $(".persist-area").each(function() {
 
@@ -306,7 +308,7 @@
            var el             = $(this),
                offset         = getInTouch.offset().top - 10,
                scrollTop      = $(window).scrollTop(),
-               floatingHeader = $(".floatingHeader", this)
+               floatingHeader = $(".floatingHeader", this);
 
            if (scrollTop > offset) {
                floatingHeader.css({
@@ -315,8 +317,10 @@
                });
                getInTouchLogo.css('visibility', 'visible');
                getInTouchLogo.css('opacity', 1);
-               getInTouchMenu.css('visibility', 'visible');
-               getInTouchMenu.css('opacity', 1);
+               if(!menuOpen) {
+                 getInTouchMenu.css('visibility', 'visible');
+                 getInTouchMenu.css('opacity', 1);
+               }
            } else {
                floatingHeader.css({
                 "visibility": "hidden",
@@ -347,6 +351,7 @@
 
              var getInTouchLogo = $('#get-in-touch-logo');
              getInTouchLogo.attr("id","get-in-touch-logo-hero");
+
              var getInTouchMenu = $('#get-in-touch-menu');
              getInTouchMenu.attr("id","get-in-touch-menu-hero");
 
@@ -373,29 +378,32 @@
             }, 1000);
         });
 
-        var button = document.getElementById("get-in-touch-button");
-        var contactOptionsHerader = document.getElementById("contact-options");
-        var myFunction = () => {
-            contactOptions.style.visibility = 'visible';
-            contactOptions.style.opacity = 1;
-        };
-        button.addEventListener('click', myFunction);
-
-
-
         // menu
         var menuHeroButton = $('#hero-menu-button');
+        var getInTouchMenu = $('#get-in-touch-menu');
         var menu = $('#menu-aside');
-        menuHeroButton.click(function(){
+
+        function openMenu(){
           menu.css('right', 0);
           menuHeroButton.css('visibility', 'hidden');
-        });
-
+          getInTouchMenu.css('visibility', 'hidden');
+          menuOpen = true;
+        }
+        menuHeroButton.click(openMenu);
+        getInTouchMenu.click(openMenu);
 
         var menuCloseButton = $('#menu-close');
         menuCloseButton.click(function(){
           menu.css('right', '-300px');
           menuHeroButton.css('visibility', 'visible');
+          var getInTouch = $('.get-in-touch');
+          var offset         = getInTouch.offset().top - 10;
+          var scrollTop      = $(window).scrollTop();
+          if (scrollTop > offset) {
+            getInTouchMenu.css('visibility', 'visible');
+            getInTouchMenu.css('opacity', 1);
+          }
+          menuOpen = false;
         });
 
 
