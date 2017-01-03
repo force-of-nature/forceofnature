@@ -125,7 +125,6 @@ section p{
 	line-height: 60px;
 	background-color: rgba(255, 255, 255, 0.8);
 	right: -300px;
-	transition: right 0.5 ease;
 	text-align: right;
 	z-index: 900;
 }
@@ -169,12 +168,36 @@ section p{
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 415px){
 
-}
+	.menu-aside {
+		padding: 12px 20px 0 20px;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 50px;
+		width: 200px;
+
+	}
+
+	.menu-aside i {
+		font-size: 35px;
+	}
+
+	.menu-aside ul li {
+	}
+
+	.menu-aside .close-button {
+	}
 
 
-@media (max-width: 700px){
+
+	.floatingHeader {
+		transition: none !important;;
+	}
+
+
+
+
 }
 
 
@@ -386,6 +409,7 @@ section p{
 
 	.home-section .get-in-touch .logo {
 		padding-left: 10px;
+		transition: none;
 	}
 
 	.home-section .get-in-touch .logo img {
@@ -396,6 +420,7 @@ section p{
 
 	.home-section .get-in-touch .menu {
 		padding: 10px 10px;
+		transition: none;
 	}
 
 	.home-section .get-in-touch .menu i {
