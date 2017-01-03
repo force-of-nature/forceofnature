@@ -15,6 +15,10 @@ html{
 	color: #555;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 ul, nav{
 	list-style: none;
 }
@@ -156,6 +160,7 @@ section p{
   visibility: hidden;
 	padding: 10px;
 	width: 100%;
+	box-sizing: border-box;
 	background-color: transparent;
 	transition: background-color 1.5s ease;
 	z-index: 200;
@@ -404,6 +409,7 @@ section p{
 	.services-section .grid .service .service-detail .service-image{
 		width: 100%;
 		padding: 10px;
+		box-sizing: border-box;
 	}
 
 
