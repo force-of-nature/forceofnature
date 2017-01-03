@@ -174,10 +174,10 @@ ul.grid{
 
 
 /*----------------
- 	Hero Section
+ 	Home Section
 ----------------*/
 
-.hero{
+.home-section{
 	padding: 0;
 	position: relative;
 	justify-content: space-between;;
@@ -186,7 +186,7 @@ ul.grid{
 	align-items: center;
 }
 
-.hero .background-image{
+.home-section .background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -198,7 +198,7 @@ ul.grid{
 	opacity: 0.8;
 }
 
-.hero .background-image:after{
+.home-section .background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -209,46 +209,46 @@ ul.grid{
 	opacity: 0.30;
 }
 
-.hero-splash-container {
+.home-splash-container {
 	width: 100%;
 	justify-content: center;
 }
 
-.hero .hero-menu-container {
+.home-section .home-menu-container {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 
 }
 
-.hero .hero-menu-container .menu {
+.home-section .home-menu-container .menu {
 	width: 200px;
 	color: white;
 	font-size: 35px;
 	padding: 17.5px 40px;
 }
 
-.hero .hero-menu-container .menu i {
+.home-section .home-menu-container .menu i {
 	float: right;
 	opacity: 0.8;
 	transition: opacity	.5s ease;
 	cursor: pointer;
 }
 
-.hero .hero-menu-container .menu i:hover {
+.home-section .home-menu-container .menu i:hover {
 	opacity: 1;
 }
 
-.hero h1{
+.home-section h1{
 	margin-bottom: 50px;
 }
 
-.hero .logo-splash {
+.home-section .logo-splash {
 	color: white;
 	text-align: center;
 }
 
-.hero .logo-splash h1 {
+.home-section .logo-splash h1 {
 	font-size: 100px;
 	line-height: 50px;
 	font-weight: 100;
@@ -257,7 +257,7 @@ ul.grid{
 	font-family: 'Lobster', cursive;
 }
 
-.hero .logo-splash h3 {
+.home-section .logo-splash h3 {
 	font-size: 40px;
 	font-weight: 200;
 	color: white;
@@ -266,13 +266,13 @@ ul.grid{
 	margin: 80px 0 50px 0;
 }
 
-.hero a.btn {
+.home-section a.btn {
 	background-color: rgb(98, 146, 237);
 	padding: 16px 40px;
 	color: white;
 }
 
-.hero .contact-options {
+.home-section .contact-options {
 	transition: opacity 0.8s ease;
 	opacity: 0;
 	visibility: hidden;
@@ -284,7 +284,7 @@ ul.grid{
 	text-align: center;
 }
 
-.hero ul{
+.home-section ul{
 	display: flex;
 	margin: 15px 0;
 	font-size: 32px;
@@ -292,29 +292,29 @@ ul.grid{
 	font-size: 50px;
 }
 
-.hero ul li{
+.home-section ul li{
 	margin: 0 8px;
 }
 
-.hero ul li:first-child{
+.home-section ul li:first-child{
 	margin-left: 0;
 }
 
-.hero ul li:last-child{
+.home-section ul li:last-child{
 	margin-right: 0;
 }
 
-.hero .get-in-touch {
+.home-section .get-in-touch {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-.hero .get-in-touch > * {
+.home-section .get-in-touch > * {
 	width: 200px;
 }
 
-.hero .get-in-touch .menu {
+.home-section .get-in-touch .menu {
 	color: rgb(98, 146, 237);
 	padding: 7.5px 30px;
 	visibility: hidden;
@@ -322,73 +322,27 @@ ul.grid{
 	transition: opacity 1.5s ease;
 }
 
-.hero .get-in-touch .menu i {
+.home-section .get-in-touch .menu i {
 	float: right;
 	cursor: pointer;
 	font-size: 35px;
 }
 
-.hero .get-in-touch .logo {
+.home-section .get-in-touch .logo {
 	padding-left: 30px;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1.5s ease;
 }
 
-.hero .get-in-touch .logo img {
+.home-section .get-in-touch .logo img {
 	height: 50px;
 	cursor: pointer;
 }
 
-
 /*--------------------
- 	About Section
+ 	Services Section
 ---------------------*/
-
-.about{
-	position: relative;
-	justify-content: flex-start;
-	min-height: 100vh;
-	text-align: left;
-	align-items: flex-start;
-	/*border-bottom: 1px solid silver;*/
-}
-
-.about .background-image{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #FFFFFF;
-	z-index: -1;
-	opacity: 0.8;
-}
-
-.about .background-image:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #FFFFFF;
-	opacity: 0.7;
-}
-
-.about h1{
-	margin-bottom: 15px;
-}
-
-
-/*--------------------
- 	Our Work Section
----------------------*/
-
-.оur-work{
-	background-color: #fff;
-}
 
 .services-section .grid li {
 	padding: 20px;
@@ -445,66 +399,12 @@ ul.grid{
 
 
 
-/*----------------------
- 	Features Section
-----------------------*/
-
-.features{
-	background-color: #f7f7f7;
-}
-
-.features .grid li{
-	padding: 0 30px;
-	flex-basis: 33%;
-	text-align: center;
-}
-
-.features .grid li i{
-    font-size: 50px;
-    color: #2196F3;
-    margin-bottom: 25px;
-}
-
-.features .grid li h4{
-	color: #555;
-    font-size: 20px;
-    margin-bottom: 25px;
-}
-
-.features .grid li p{
-    margin: 0;
-}
-
-@media (max-width: 1000px){
-
-	.features .grid li{
-		flex-basis: 70%;
-		margin-bottom: 65px;
-	}
-
-	.features .grid li:last-child{
-		margin-bottom: 0;
-	}
-
-}
-
-
-@media (max-width: 600px){
-
-	.features .grid li{
-		flex-basis: 100%;
-	}
-
-}
-
-
-
 /*--------------------
- 	Reviews Section
+ 	Feedback Section
 --------------------*/
 
 
-.reviews{
+.feedback-section{
 	position: relative;
 	justify-content: flex-start;
 	min-height: 100vh;
@@ -512,7 +412,7 @@ ul.grid{
 	align-items: flex-start;
 }
 
-.reviews .background-image{
+.feedback-section .background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -524,7 +424,7 @@ ul.grid{
 	opacity: 0.8;
 }
 
-.reviews .background-image:after{
+.feedback-section .background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -535,7 +435,7 @@ ul.grid{
 	opacity: 0.8;
 }
 
-.reviews .quote{
+.feedback-section .quote{
 	text-align: left;
 	width: 80%;
     font-size: 22px;
@@ -545,14 +445,14 @@ ul.grid{
     padding: 0;
 }
 
-.reviews .quote-marks {
+.feedback-section .quote-marks {
 	font-size: 38px;
 	font-weight: 600;
 	color: silver;
 	line-height: 22px;
 }
 
-.reviews .author{
+.feedback-section .author{
     font-size: 18px;
 		font-weight: 200;
     margin-bottom: 50px;
@@ -562,21 +462,62 @@ ul.grid{
 		color: grey;
 }
 
-.reviews .author:last-child{
+.feedback-section .author:last-child{
     margin-bottom: 0;
 }
 
 @media (max-width: 1000px){
 
-	.reviews .quote{
+	.feedback-section .quote{
 		font-size: 20px;
 	}
 
-	.reviews .author{
+	.feedback-section .author{
 	    font-size: 16px;
 	}
 
 }
+
+
+/*--------------------
+ 	About Section
+---------------------*/
+
+.about{
+	position: relative;
+	justify-content: flex-start;
+	min-height: 100vh;
+	text-align: left;
+	align-items: flex-start;
+}
+
+.about .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #FFFFFF;
+	z-index: -1;
+	opacity: 0.8;
+}
+
+.about .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	opacity: 0.7;
+}
+
+.about h1{
+	margin-bottom: 15px;
+}
+
 
 
 
@@ -646,6 +587,10 @@ ul.grid{
 
 .contact .card .logo {
 	width: 300px;
+}
+
+.contact .card .title {
+	margin-bottom: 10px;
 }
 
 .contact .card .card-background-image {
