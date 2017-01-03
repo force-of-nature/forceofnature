@@ -12,14 +12,33 @@
 <body class="persist-area">
 
 
-  <aside></aside>
+  <aside id="menu-aside" class="menu-aside">
+    <i id="menu-close" class="fa fa-times close-button"></i>
+    <ul>
+      <li>
+        Home
+      </li>
+      <li>
+        About
+      </li>
+      <li>
+        Feedback
+      </li>
+      <li>
+        Services
+      </li>
+      <li>
+        Contact
+      </li>
+    </ul>
+  </aside>
 
 	<section class="hero">
 		<div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
 
     <div class="hero-menu-container">
-      <div id="hero-menu" class="menu">
-        <i class="fa fa-bars"></i>
+      <div class="menu">
+        <i id="hero-menu-button" class="fa fa-bars"></i>
       </div>
     </div>
 
@@ -361,6 +380,24 @@
             contactOptions.style.opacity = 1;
         };
         button.addEventListener('click', myFunction);
+
+
+
+        // menu
+        var menuHeroButton = $('#hero-menu-button');
+        var menu = $('#menu-aside');
+        menuHeroButton.click(function(){
+          menu.css('right', 0);
+          menuHeroButton.css('visibility', 'hidden');
+        });
+
+
+        var menuCloseButton = $('#menu-close');
+        menuCloseButton.click(function(){
+          menu.css('right', '-300px');
+          menuHeroButton.css('visibility', 'visible');
+        });
+
 
     });
   </script>

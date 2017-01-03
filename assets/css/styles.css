@@ -107,6 +107,46 @@ ul.grid{
 	justify-content: center;
 }
 
+.menu-aside {
+	position: fixed;
+	padding: 5px 40px 0 20px;
+	width: 300px;
+	height: 100vh;
+	color: rgb(98, 146, 237);
+	text-transform: uppercase;;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 60px;
+	background-color: rgba(255, 255, 255, 0.8);
+	right: -300px;
+	transition: right 0.5 ease;
+	text-align: right;
+	z-index: 900;
+}
+
+.menu-aside ul li {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity .5s ease;
+	z-index: 900;
+}
+.menu-aside ul li:hover {
+	opacity: 1;
+}
+
+.menu-aside .close-button {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity .5s ease;
+	z-index: 900;
+}
+
+.menu-aside .close-button:hover {
+	opacity: 1;
+}
+
+
 /*-------------
  	Header
 -------------*/
@@ -190,6 +230,13 @@ ul.grid{
 
 .hero .hero-menu-container .menu i {
 	float: right;
+	opacity: 0.8;
+	transition: opacity	.5s ease;
+	cursor: pointer;
+}
+
+.hero .hero-menu-container .menu i:hover {
+	opacity: 1;
 }
 
 .hero h1{
