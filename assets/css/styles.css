@@ -353,7 +353,8 @@ section p{
 
 	.home-section .home-menu-container .menu {
 		width: 100px;
-		padding: 17.5px 20px;
+		font-size: 30px;
+		padding: 20px 20px;
 	}
 
 	.home-section .logo-splash img{
@@ -394,7 +395,13 @@ section p{
 	}
 
 	.home-section .get-in-touch .menu {
-		padding: 7.5px 10px;
+		padding: 10px 10px;
+	}
+
+	.home-section .get-in-touch .menu i {
+		float: right;
+		cursor: pointer;
+		font-size: 30px;
 	}
 
 }
