@@ -151,6 +151,39 @@ section p{
 		text-align: left;
 	}
 
+	section p{
+		text-align: left;
+		margin-bottom: 40px;
+		padding: 0 10px;
+		line-height: 1.5;
+	}
+
+}
+
+@media (max-width: 400px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+	section h3.title{
+		color: rgb(98, 146, 237);
+		text-transform: uppercase;;
+		font-style: italic;
+		font-size: 38px;
+		font-weight: 600;
+		margin-bottom: 25px;
+		text-align: left;
+	}
+
+	section p{
+		text-align: left;
+		margin-bottom: 40px;
+		padding: 0 10px;
+		line-height: 1.5;
+		font-size: 15px;
+	}
+
 }
 
 
@@ -356,9 +389,13 @@ section p{
 	transition: opacity 1.5s ease;
 }
 
-.home-section .get-in-touch .logo img {
+.home-section .get-in-touch .logo img.flat {
 	height: 50px;
 	cursor: pointer;
+}
+
+.home-section .get-in-touch .logo img.stacked {
+	display: none;
 }
 
 @media (max-width: 600px){
@@ -399,16 +436,18 @@ section p{
 		margin-top: 10px;
 	}
 
+	.home-section .get-in-touch .logo img.flat {
+		height: 30px;
+		margin-top: 10px;
+		cursor: pointer;
+	}
+
 	.home-section .get-in-touch .logo {
-		padding-left: 10px;
+		padding-left: 5px;
 		transition: none;
 	}
 
-	.home-section .get-in-touch .logo img {
-		margin-top: 10px;
-		height: 30px;
-		cursor: pointer;
-	}
+
 
 	.home-section .get-in-touch .menu {
 		padding: 10px 10px;
@@ -423,6 +462,27 @@ section p{
 
 }
 
+@media (max-width: 400px){
+	.home-section .logo-splash img{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.home-section .logo-splash h3 {
+		font-size: 25px;
+		margin: 0 20px 40px 20px;
+	}
+
+	.home-section .get-in-touch .logo img.flat {
+		display: none;
+	}
+
+	.home-section .get-in-touch .logo img.stacked {
+		display: block;
+		margin-top: 5px;
+		height: 40px;
+	}
+}
 
 
 
