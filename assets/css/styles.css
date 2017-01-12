@@ -138,7 +138,7 @@ section p{
 @media (max-width: 600px){
 
 	section{
-		padding: 50px 30px;
+		padding: 80px 30px;
 	}
 
 	section h3.title{
@@ -614,6 +614,18 @@ section p{
 	align-items: flex-start;
 }
 
+.about-section .background-image.large {
+	display: block;
+}
+
+.about-section .background-image.medium {
+	display: none;
+}
+
+.about-section .background-image.small {
+	display: none;
+}
+
 .about-section .background-image{
 	position: absolute;
 	top: 0;
@@ -623,7 +635,7 @@ section p{
 	background-size: cover;
 	background-color: #FFFFFF;
 	z-index: -1;
-	opacity: 0.8;
+	/*opacity: 0.4;*/
 }
 
 .about-section .background-image:after{
@@ -641,6 +653,41 @@ section p{
 	margin-bottom: 15px;
 }
 
+@media (max-width: 1200px){
+	.about-section .background-image:after{
+			opacity: 0.9;
+	}
+
+	.about-section .background-image.large {
+		display: none;
+	}
+
+	.about-section .background-image.medium {
+		display: block;
+	}
+
+	.about-section .background-image.small {
+		display: none;
+	}
+}
+
+@media (max-width: 600px){
+	.about-section .background-image:after{
+			opacity: 0.9;
+	}
+
+	.about-section .background-image.large {
+		display: none;
+	}
+
+	.about-section .background-image.medium {
+		display: none;
+	}
+
+	.about-section .background-image.small {
+		display: block;
+	}
+}
 
 /*---------------------
  	Contact Section
@@ -689,7 +736,6 @@ section p{
 	align-self: center;
 	padding: 20px 120px 20px 40px;
 	border: 1px solid silver;
-	/*background-color: #ffffff;*/
 }
 
 .contact-section .card .card-body {
@@ -738,9 +784,21 @@ section p{
 }
 
 
-@media (max-width: 415px){
+@media (max-width: 600px){
 	.contact-section {
 		overflow: hidden;
+	}
+
+	.contact-section .card {
+		font-size: 8px;
+	}
+
+	.contact-section .card .card-body {
+		padding: 5px 5px;
+	}
+
+	.contact-section .card .logo {
+		width: 200px;
 	}
 
 }
@@ -807,10 +865,10 @@ footer h1 {
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
 
 	footer{
-		padding: 80px 15px;
+		padding: 20px 15px 0 15px;
 	}
 
 }
