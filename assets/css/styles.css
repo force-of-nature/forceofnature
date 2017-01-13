@@ -571,8 +571,11 @@ section p{
 }
 
 .services-section .grid .service .service-detail {
-	display: none;
-	padding-left: 20px;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 0;
+	transition: max-height .5s ease;
 }
 
 .services-section .grid .service .service-detail .service-image{
@@ -587,7 +590,7 @@ section p{
 	font-size: 26px;
 	font-weight: 200;
 	margin-top: 12px;
-	margin-bottom: 12px;
+	margin-bottom: 0;
 	cursor: pointer;
 }
 
