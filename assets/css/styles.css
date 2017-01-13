@@ -67,7 +67,7 @@ section h3.title{
 	text-transform: uppercase;;
 	font-style: italic;
 	font-size: 48px;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 35px;
 	text-align: left;
 	z-index: 1001;
@@ -131,7 +131,7 @@ section p{
 @media (max-width: 1000px){
 
 	section{
-		padding: 40px 50px 74px 50px;
+		padding: 60px 50px 74px 50px;
 	}
 
 }
@@ -147,7 +147,6 @@ section p{
 		text-transform: uppercase;;
 		font-style: italic;
 		font-size: 38px;
-		font-weight: 600;
 		margin-bottom: 35px;
 		text-align: left;
 	}
@@ -238,7 +237,7 @@ section p{
 	min-height: 100vh;
 	text-align: left;
 	align-items: center;
-	background-color: rgba(178, 178, 178, .4);
+	background-color: rgba(110, 110, 110, .4);
 }
 
 .home-section .background-image{
@@ -410,6 +409,21 @@ section p{
 	.home-section .logo-splash img{
 		width: 100%;
 		padding: 30px;
+	}
+
+	.home-section .logo-splash h1 {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 800px){
+	.home-section .logo-splash img{
+		width: 100%;
+		padding: 0 30px 10px 30px;
+	}
+
+	.home-section .logo-splash h3 {
+		margin: 0 100px 40px 100px;
 	}
 }
 
