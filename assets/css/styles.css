@@ -695,14 +695,16 @@ section p{
 	display: none;
 }
 
+.about-section * {
+	z-index: 2;
+}
+
 .about-section .background-image{
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
-	/*background-size: cover;*/
-	z-index: -1;
-	/*background-color: white;*/
+	z-index: 1;
 }
 
 .about-section h1{
