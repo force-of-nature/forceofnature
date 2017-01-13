@@ -70,6 +70,7 @@ section h3.title{
 	font-weight: 600;
 	margin-bottom: 35px;
 	text-align: left;
+	z-index: 1001;
 }
 
 section h2.sub-title{
@@ -200,7 +201,7 @@ section p{
 	box-sizing: border-box;
 	background-color: transparent;
 	transition: background-color 1.5s ease;
-	z-index: 200;
+	z-index: 1002;
 }
 
 
