@@ -58,24 +58,24 @@
         <br />
       </div>
       <div class="get-in-touch persist-header">
-        <div id="get-in-touch-logo" class="logo" onCLick="scrollToSection('home');">
+        <div id="get-in-touch-logo" class="logo" onClick="scrollToSection('home');">
           <img class="flat" src="assets/img/fon_logo_blue.png" />
           <img class="stacked" src="assets/img/fon_logo_stacked_blue.png" />
         </div>
-        <a id="get-in-touch-button" class="btn">
+        <a id="get-in-touch-button" class="btn" onClick="scrollToSection('contact');">
           Get in touch
         </a>
         <div id="get-in-touch-menu" class="menu">
           <i class="fa fa-bars"></i>
         </div>
       </div>
-      <div id="contact-options-home" class="contact-options">
+      <!-- <div id="contact-options-home" class="contact-options">
         <ul>
           <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
           <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-envelope-square"></i></a></li>
     			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
     		</ul>
-      </div>
+      </div> -->
     </div>
 
     <div class="home-footer">
@@ -429,6 +429,7 @@
     $(function() {
 
        var clonedHeaderRow;
+       const headerHeight = 69;
 
        $(".persist-area").each(function() {
            clonedHeaderRow = $(".persist-header", this);
@@ -458,22 +459,6 @@
         window.addEventListener('orientationchange', function () {
           var header = $('#header');
           header.width($(window).width());
-        });
-
-        var button = $("#get-in-touch-button-home");
-        button.click(function(){
-          var contactOptions = $("#contact-options-home");
-          contactOptions.css({
-            'visibility': 'visible',
-            'opacity': 1
-          });
-        })
-
-        var buttonHeader = $("#get-in-touch-button");
-        buttonHeader.click(function() {
-            $('html, body').animate({
-                scrollTop: $("#contact-section").offset().top
-            }, 1000);
         });
 
         // menu
@@ -506,7 +491,6 @@
 
         window.scrollToSection = function(section) {
           var scrollPoint = 0;
-          var headerHeight = 69;
 
           switch(section) {
             case 'home':
