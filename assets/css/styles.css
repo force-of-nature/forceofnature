@@ -778,6 +778,7 @@ section p{
 	align-self: center;
 	padding: 20px 120px 20px 40px;
 	border: 1px solid silver;
+	background-color: white;
 }
 
 .contact-section .card .card-body {
@@ -802,7 +803,7 @@ section p{
 	margin-bottom: 10px;
 }
 
-.contact-section .card .card-background-image {
+/*.contact-section .card .card-background-image {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -823,7 +824,7 @@ section p{
 	height: 100%;
 	background-color: #FFFFFF;
 	opacity: 0.8;
-}
+}*/
 
 @media (max-width: 1000px){
 	.contact-section{
