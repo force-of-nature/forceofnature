@@ -563,12 +563,11 @@ section p{
 }
 
 .services-section .grid .service .service-title i{
+	display: inline-block;
 	width: 15px;
 	font-size: 20px;
-	vertical-align: middle;
 	margin-bottom: 10px;
 	color: silver;
-	display: inline;
 }
 
 
@@ -692,6 +691,7 @@ section p{
 	min-height: 100vh;
 	text-align: left;
 	align-items: flex-start;
+	background-color: white;
 }
 
 .about-section .background-image.large {
