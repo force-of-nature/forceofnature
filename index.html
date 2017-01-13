@@ -372,7 +372,7 @@
 
 
 
-	<footer>
+	<footer id="footer">
     <img class="logo" src="assets/img/fon_logo.png" />
     <h1>Gardens</h1>
 		<ul>
@@ -430,6 +430,8 @@
 
        var clonedHeaderRow;
        const headerHeight = 69;
+       const footerHeight = $('#footer').height();
+       const windowHeight = $(window).height();
 
        $(".persist-area").each(function() {
            clonedHeaderRow = $(".persist-header", this);
@@ -528,6 +530,10 @@
 
           detailSection.css('display', visible ? 'none' : 'inline');
         }
+
+        var contactSection = $('#contact-section');
+
+      //  contactSection.height(windowHeight - footerHeight - headerHeight);
 
     });
   </script>
