@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Force of Nature</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -446,7 +446,8 @@
            clonedHeaderRow
              .before(clonedHeaderRow.clone())
              .css("width", clonedHeaderRow.width())
-             .addClass("floatingHeader");
+             .addClass("floatingHeader")
+             .attr("id","header");
 
              var getInTouchButton = $('#get-in-touch-button');
              getInTouchButton.attr("id","get-in-touch-button-home");
@@ -465,6 +466,10 @@
 
         $(window).bind('touchmove', UpdateHeader);
 
+        window.addEventListener('orientationchange', function () {
+          var header = $('#header');
+          header.width($(window).width());
+        });
 
         var button = $("#get-in-touch-button-home");
         button.click(function(){

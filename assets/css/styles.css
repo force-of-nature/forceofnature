@@ -398,6 +398,10 @@ section p{
 	display: none;
 }
 
+#header{
+	display: flex;
+}
+
 @media (max-width: 1000px){
 	.home-section .logo-splash img{
 		width: 100%;
