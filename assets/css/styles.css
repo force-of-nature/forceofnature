@@ -669,6 +669,7 @@ section p{
 	min-height: 100vh;
 	text-align: left;
 	align-items: flex-start;
+	background-color: white;
 }
 
 .about-section .background-image.large {
