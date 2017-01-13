@@ -812,8 +812,19 @@ section p{
 	background-color: white;
 }
 
+
+.contact-section .card .background-image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+
 .contact-section .card .card-body {
 	padding: 5px 10px;
+	position: relative;
+	z-index: 2;
 }
 
 .contact-section .card .card-body .item {
@@ -823,15 +834,26 @@ section p{
 .contact-section .card .card-body .item i {
 	color: silver;
 	margin-right: 10px;
+	position: relative;
+	z-index: 2;
 }
 
 
 .contact-section .card .logo {
 	width: 300px;
+	position: relative;
+	z-index: 2;
 }
 
 .contact-section .card .title {
 	margin-bottom: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.contact-section .card .logan {
+	position: relative;
+	z-index: 2;
 }
 
 @media (max-width: 1000px){
