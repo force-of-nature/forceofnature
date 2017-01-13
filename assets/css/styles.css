@@ -398,6 +398,13 @@ section p{
 	display: none;
 }
 
+@media (max-width: 1000px){
+	.home-section .logo-splash img{
+		width: 100%;
+		padding: 30px;
+	}
+}
+
 @media (max-width: 600px){
 	body{
 		overflow-x: hidden;
