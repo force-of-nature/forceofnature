@@ -42,7 +42,8 @@
 
 
 	<section class="home-section" id="home-section">
-		<div class="background-image" style="background-image: url(assets/img/background_2.jpg);"></div>
+		<div class="background-image small" id="background-image" style="background-image: url(assets/img/background_2.jpg);"></div>
+    <div class="background-image large" id="background-image-big" style="background-image: url(assets/img/background_2_big.jpg);"></div>
 
     <div class="home-menu-container">
       <div class="menu">
@@ -376,7 +377,7 @@
 
 
 	<footer id="footer">
-    <img class="logo" src="assets/img/fon_logo.png" />
+    <img class="logo" src="assets/img/fon_logo_blue.png" />
     <h1>Gardens</h1>
 		<ul>
       <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
@@ -455,11 +456,45 @@
 
        });
 
+       function paralax() {
+         var backgroundImage = $('#background-image');
+         var backgroundImageBig = $('#background-image-big');
+
+         var viewHeight = $(window).height();
+
+         var offset = $(window).scrollTop();
+         //
+        //  if(offset >= $("#services-section").offset().top) {
+        //    viewHeight = $("#services-section").height();
+        //  }
+        //  if(offset >= $("#feedback-section").offset().top) {
+        //    viewHeight = $("#feedback-section").height();
+        //  }
+        //  if(offset >= $("#about-section").offset().top) {
+        //    viewHeight = $("#about-section").height();
+        //  }
+        //  if(offset >= $("#contact-section").offset().top) {
+        //    viewHeight = $("#contact-section").height();
+        //  }
+
+         if(offset >= viewHeight){
+           offset = offset - (offset - viewHeight);
+         }
+         offset = offset % viewHeight;
+
+         var paralax = offset / viewHeight * 100;
+
+         backgroundImage.css({ 'top': '-' + paralax * 2 + 'px' });
+         backgroundImageBig.css({ 'top': '-' + paralax * 2 + 'px' });
+       }
+
        $(window)
         .scroll(UpdateHeader)
+        .scroll(paralax)
         .trigger("scroll");
 
         $(window).bind('touchmove', UpdateHeader);
+        $(window).bind('touchmove', paralax);
 
         window.addEventListener('orientationchange', function () {
           var header = $('#header');
