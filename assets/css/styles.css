@@ -541,11 +541,12 @@ section p{
 }
 
 .services-section .grid .service .service-title i{
-	width: 10px;
+	width: 15px;
 	font-size: 20px;
 	vertical-align: middle;
 	margin-bottom: 10px;
 	color: silver;
+	display: inline;
 }
 
 
@@ -569,6 +570,8 @@ section p{
 	}
 
 	.services-section .grid .service .service-title i{
+		display: inline-block;
+		width: 10px;
 		margin-bottom: 5px;
 	}
 
@@ -578,7 +581,7 @@ section p{
 	}
 
 	.services-section .grid .service .service-title .short-name {
-		display: block;
+		display: inline;
 	}
 
 	.services-section .grid .service .service-title .long-name {

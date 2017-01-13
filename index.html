@@ -86,7 +86,6 @@
 
 
 
-
   <section class="services-section" id="services-section">
     <h3 class="title">Services</h3>
     <p>
@@ -126,14 +125,9 @@
 
       <li class="service">
         <h2 class="service-title" onClick="showServiceDetail('attracting-birds');">
-            <span class="long-name">
-              <i style="color: #D17BBC" id="attracting-birds-caret" class="fa fa-caret-right"></i>&nbsp;
-              Attracting birds, bees, butterflies and other wildlife
-            </span>
-            <span class="short-name">
-              <i style="color: #D17BBC" id="attracting-birds-caret" class="fa fa-caret-right"></i>&nbsp;
-              Attracting wildlife
-            </span>
+            <i style="color: #D17BBC;" id="attracting-birds-caret" class="fa fa-caret-right"></i>&nbsp;
+            <span class="long-name">Attracting birds, bees, butterflies and other wildlife</span>
+            <span class="short-name">Attracting wildlife</span>
         </h2>
         <div class="service-detail" id="attracting-birds-detail">
           <img class="service-image" src="assets/img/services/attracting-birds.webp" />
@@ -160,14 +154,9 @@
 
       <li class="service">
         <h2 class="service-title" onClick="showServiceDetail('lawn');">
-          <span class="long-name">
-            <i style="color: #FFC196" id="lawn-caret" class="fa fa-caret-right"></i>&nbsp;
-            Lawn installation and on going care
-          </span>
-          <span class="short-name">
-            <i style="color: #FFC196" id="lawn-caret" class="fa fa-caret-right"></i>&nbsp;
-            Lawn installation and care
-          </span>
+          <i style="color: #FFC196" id="lawn-caret" class="fa fa-caret-right"></i>&nbsp;
+          <span class="long-name">Lawn installation and on going care</span>
+          <span class="short-name">Lawn installation and care</span>
         </h2>
         <div class="service-detail" id="lawn-detail">
           <img class="service-image" src="assets/img/services/lawn.png" />
@@ -548,12 +537,12 @@
         window.showServiceDetail = function (serviceName) {
           var detailSection = $('#' + serviceName + '-detail');
 
-          var visible = detailSection.css('display') === 'block';
+          var visible = detailSection.css('display') === 'inline';
 
           var caret = $('#' + serviceName + '-caret');
           caret.attr('class', 'fa fa-caret-' + (visible ? 'right' : 'down'));
 
-          detailSection.css('display', visible ? 'none' : 'block');
+          detailSection.css('display', visible ? 'none' : 'inline');
         }
 
     });
