@@ -677,7 +677,6 @@ section p{
 	min-height: 100vh;
 	text-align: left;
 	align-items: flex-start;
-	/*background-color: white;*/
 }
 
 .about-section .background-image.large {
@@ -685,6 +684,10 @@ section p{
 }
 
 .about-section .background-image.medium {
+	display: none;
+}
+
+.about-section .background-image.medium-small {
 	display: none;
 }
 
@@ -697,23 +700,9 @@ section p{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 100vw;
-	max-width: 100vw;
 	height: 100%;
 	background-size: cover;
-	/*background-color: #FFFFFF;*/
 	z-index: -1;
-}
-
-.about-section .background-image:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #FFFFFF;
-	opacity: 0.7;
 }
 
 .about-section h1{
