@@ -512,6 +512,7 @@
 
         window.scrollToSection = function(section) {
           var scrollPoint = 0;
+          var headerHeight = 69;
 
           switch(section) {
             case 'home':
@@ -532,9 +533,10 @@
           }
 
           $('html, body').animate({
-              scrollTop: scrollPoint
+              scrollTop: scrollPoint - headerHeight
           }, 500);
 
+          setTimeout(function() { menuCloseButton.click(); }, 600);
         }
 
 
@@ -547,8 +549,6 @@
           caret.attr('class', 'fa fa-caret-' + (visible ? 'right' : 'down'));
 
           detailSection.css('display', visible ? 'none' : 'block');
-
-
         }
 
     });
