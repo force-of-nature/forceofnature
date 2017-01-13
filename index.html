@@ -70,13 +70,6 @@
           <i class="fa fa-bars"></i>
         </div>
       </div>
-      <!-- <div id="contact-options-home" class="contact-options">
-        <ul>
-          <li><a href="tel:+64204628873"><i class="fa fa-phone-square"></i></a></li>
-          <li><a href="mailto:admin@aforceofnature.co.nz"><i class="fa fa-envelope-square"></i></a></li>
-    			<li><a href="http://facebook.com/forceofnaturegardens"><i class="fa fa-facebook-square"></i></a></li>
-    		</ul>
-      </div> -->
     </div>
 
     <div class="home-footer">
@@ -433,7 +426,7 @@
     $(function() {
 
        var clonedHeaderRow;
-       const headerHeight = 74;
+       var headerHeight = 0;
        const footerHeight = $('#footer').height();
        const windowHeight = $(window).height();
 
@@ -454,6 +447,7 @@
              var getInTouchMenu = $('#get-in-touch-menu');
              getInTouchMenu.attr("id","get-in-touch-menu-home");
 
+            headerHeight = $('#header').height() + 20;
        });
 
        function paralax() {
