@@ -696,14 +696,13 @@ section p{
 }
 
 .about-section .background-image{
-	display: block;
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	left: 0;
+	top: 0;
 	height: 100%;
-	background-size: cover;
+	/*background-size: cover;*/
 	z-index: -1;
-	background-color: white;
+	/*background-color: white;*/
 }
 
 .about-section h1{
