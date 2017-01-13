@@ -521,7 +521,23 @@ section p{
 ---------------------*/
 
 .services-section {
-		background-color: white;
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+}
+
+.services-section > * {
+	position: relative;
+	z-index: 2;
+}
+
+.services-section .background-image{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	z-index: 1;
+	opacity: 0.3;
 }
 
 .services-section .grid {
@@ -572,6 +588,7 @@ section p{
 
 
 @media (max-width: 600px){
+
 
 	.services-section .grid {
 		margin-left: 0;
