@@ -96,19 +96,25 @@ section p{
 
 .menu-aside {
 	position: fixed;
-	padding: 5px 40px 0 20px;
+	right: 0;
 	width: 300px;
 	height: 100vh;
+	z-index: -1003;
+}
+
+.menu-aside .menu-body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 5px 40px 0 20px;
+	right: -100%;
+	transition: right 0.5s;
 	color: rgb(157, 189, 249);
-	/*text-transform: uppercase;;*/
-	font-style: italic;
 	font-weight: 400;
 	font-size: 50px;
 	line-height: 70px;
-	background-color: rgba(255, 255, 255, 0.8);
-	right: -300px;
 	text-align: right;
-	z-index: 1003;
 }
 
 .menu-aside ul li {
@@ -210,12 +216,14 @@ section p{
 @media (max-width: 600px){
 
 	.menu-aside {
+		width: 200px;
+	}
+
+	.menu-aside .menu-body {
 		padding: 12px 20px 0 20px;
 		font-weight: 400;
 		font-size: 30px;
 		line-height: 50px;
-		width: 200px;
-
 	}
 
 	.menu-aside i {

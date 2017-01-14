@@ -16,24 +16,26 @@
 
 
   <aside id="menu-aside" class="menu-aside">
-    <i id="menu-close" class="fa fa-times close-button"></i>
-    <ul>
-      <li onCLick="scrollToSection('home');">
-        Home
-      </li>
-      <li onCLick="scrollToSection('services');">
-        Services
-      </li>
-      <li onCLick="scrollToSection('feedback');">
-        Feedback
-      </li>
-      <li onCLick="scrollToSection('about');">
-        About
-      </li>
-      <li onCLick="scrollToSection('contact');">
-        Contact
-      </li>
-    </ul>
+    <div id="menu-body" class="menu-body">
+      <i id="menu-close" class="fa fa-times close-button"></i>
+      <ul>
+        <li onCLick="scrollToSection('home');">
+          Home
+        </li>
+        <li onCLick="scrollToSection('services');">
+          Services
+        </li>
+        <li onCLick="scrollToSection('feedback');">
+          Feedback
+        </li>
+        <li onCLick="scrollToSection('about');">
+          About
+        </li>
+        <li onCLick="scrollToSection('contact');">
+          Contact
+        </li>
+      </ul>
+    </div>
   </aside>
 
 
@@ -486,9 +488,11 @@
         var menuhomeButton = $('#home-menu-button');
         var getInTouchMenu = $('#get-in-touch-menu');
         var menu = $('#menu-aside');
+        var menuBody = $('#menu-body');
 
         function openMenu(){
-          menu.css('right', 0);
+          menu.css('z-index', 1003);
+          menuBody.css('right', "0");
           menuhomeButton.css('visibility', 'hidden');
           getInTouchMenu.css('visibility', 'hidden');
           menuOpen = true;
@@ -498,7 +502,8 @@
 
         var menuCloseButton = $('#menu-close');
         menuCloseButton.click(function(){
-          menu.css('right', '-300px');
+
+          menuBody.css('right', '-100%');
           menuhomeButton.css('visibility', 'visible');
           var getInTouch = $('.get-in-touch');
           var offset         = getInTouch.offset().top - 10;
@@ -507,6 +512,13 @@
             getInTouchMenu.css('visibility', 'visible');
             getInTouchMenu.css('opacity', 1);
           }
+
+          setTimeout(
+            function() {
+              menu.css('z-index', -1003);
+            },
+            500);
+
           menuOpen = false;
         });
 
