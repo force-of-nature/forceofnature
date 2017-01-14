@@ -733,12 +733,13 @@ section p{
 	.feedback-section .quote{
 		font-size: 13px;
 		margin-left: 20px;
+		font-weight: 600;
 	}
 
 	.feedback-section .quote-marks {
-		font-size: 32px;
+		font-size: 48px;
 		font-weight: 600;
-		color: silver;
+		color: #BBB;
 		line-height: 13px;
 	}
 
