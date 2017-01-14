@@ -593,7 +593,7 @@ section p{
 	display: inline-block;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-height: 0;
+	max-height: 0px;
 	transition: max-height .5s ease;
 }
 
@@ -660,8 +660,9 @@ section p{
 	}
 
 	.services-section .grid .service .service-detail {
-		display: none;
 		padding-left: 0;
+		max-height: 0px;
+		transition: max-height .5s ease;
 	}
 
 	.services-section .grid .service .service-title .short-name {
