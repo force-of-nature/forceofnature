@@ -430,6 +430,16 @@ section p{
 	}
 }
 
+@media (max-width: 1200px){
+	.home-section .background-image.large{
+		display: none;
+	}
+}
+
+.home-section .background-image.small{
+	display: block;
+}
+
 
 @media (max-width: 1000px){
 	.home-section .logo-splash img{
@@ -444,13 +454,6 @@ section p{
 		margin-bottom: 10px;
 	}
 
-	.home-section .background-image.large{
-		display: none;
-	}
-
-	.home-section .background-image.small{
-		display: block;
-	}
 }
 
 @media (max-width: 800px){
