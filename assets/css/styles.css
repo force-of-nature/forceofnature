@@ -249,6 +249,8 @@ section p{
 	min-width: 100vw;
 	height: calc(100vh + 200px);
 	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .home-section .background-image.large{
@@ -266,7 +268,8 @@ section p{
   right: 0;
   bottom: 0;
   margin: auto;
-	height: 100vh;
+	min-height: 100vh;
+	min-width: 100vw;
 }
 
 .home-splash-container {
@@ -568,7 +571,7 @@ section p{
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 50%;
+	width: 20%;
 	z-index: 1;
 	opacity: 0.3;
 }
@@ -620,6 +623,13 @@ section p{
 	font-size: 20px;
 	margin-bottom: 10px;
 	color: silver;
+}
+
+
+@media (max-width: 1000px){
+	.services-section .background-image{
+		width: 50%;
+	}
 }
 
 
