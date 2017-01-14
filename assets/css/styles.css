@@ -231,7 +231,7 @@ section p{
 	}
 
 	.floatingHeader {
-		transition: none !important;;
+		transition: none !important;
 	}
 
 }
@@ -487,13 +487,12 @@ section p{
 	}
 
 	.home-section .logo-splash h1 {
-		font-size: 40px;
-		line-height: 25px;
+		font-size: 60px;
+		line-height: 30px;
 		margin-bottom: 40px;
 	}
 
 	.home-section .logo-splash h3 {
-		color:
 		font-size: 30px;
 		margin: 0 50px 40px 50px;
 	}
@@ -505,9 +504,8 @@ section p{
 	.home-section .get-in-touch a.btn {
 		width: 200px;
 		font-size: 20px;
-		padding: 15px 0;
+		padding: 12px 0;
 		height: 50px;
-		/*margin-top: 10px;*/
 	}
 
 	.home-section .get-in-touch .logo img.flat {
