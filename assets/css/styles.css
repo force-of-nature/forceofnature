@@ -568,6 +568,10 @@ section p{
 	overflow: hidden;
 }
 
+.services-section p {
+	padding: 0 40px;
+}
+
 .services-section > * {
 	position: relative;
 	z-index: 2;
@@ -607,6 +611,7 @@ section p{
 	float: right;
 	padding: 10px;
 	min-width: 220px;
+	max-width: 335px;
 }
 
 .services-section .grid .service .service-title {
