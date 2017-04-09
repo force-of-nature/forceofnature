@@ -23,7 +23,16 @@
          url('../fonts/snell-roundhand/snellroundhand-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Haettenschweiler';
+    src:url('../fonts/haettenschweiler/Haettenschweiler.ttf.woff') format('woff'),
+        url('../fonts/haettenschweiler/Haettenschweiler.ttf.svg#Haettenschweiler') format('svg'),
+        url('../fonts/haettenschweiler/Haettenschweiler.ttf.eot'),
+        url('../fonts/haettenschweiler/Haettenschweiler.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
