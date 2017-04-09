@@ -82,13 +82,14 @@
 
 
 @media (max-width: 1000px){
-
+	.services-section .background-image{
+		width: 40%;
+	}
 }
 
 
 @media (max-width: 600px){
-
-
-
-
+	.services-section .background-image{
+		width: 50%;
+	}
 }
