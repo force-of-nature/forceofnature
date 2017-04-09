@@ -1,9 +1,6 @@
 /*-------------
  	General
 -------------*/
-@import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext');
 
 @font-face {
     font-family: 'snell_roundhandregular';
@@ -95,8 +92,11 @@ section h3.title{
 	font-weight: 100;
 	margin-bottom: 35px;
 	text-align: left;
+    line-height: 60px;
+    margin-bottom: 70px;
 	z-index: 1001;
-	font-family: 'snell_roundhandblack';
+    font-family: Haettenschweiler;
+    font-style: italic;
 }
 
 section h2.sub-title{
@@ -263,9 +263,10 @@ section p{
 
 footer{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	text-align: center;
+    justify-content: space-around;
 	color: rgb(157, 189, 249);
 	background-color: #fff;
 	padding: 40px 0 10px 0;
@@ -313,6 +314,16 @@ footer h1 {
 	font-family: 'snell_roundhandbold';
 	margin-bottom: 20px;
 
+}
+
+footer .spacer {
+    width: 55px;
+}
+
+footer .forest-and-bird {
+    position: relative;
+    top: -15px;
+    width: 55px;
 }
 
 @media (max-width: 600px){

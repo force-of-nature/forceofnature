@@ -3,6 +3,15 @@
  	Contact Section
 ---------------------*/
 
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/helvetica/Helvetica.woff2') format('woff2'),
+		url('../fonts/helvetica/Helvetica.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 .contact-section{
 	height: calc(100vh - 252px);
 	min-height: 380px;
@@ -25,12 +34,26 @@
 }
 
 .contact-section .card {
-	font-size: 14px;
+	height: 200px;
+	width: 327px;
 	position: relative;
 	align-self: center;
 	padding: 20px 120px 20px 40px;
-	border: 1px solid silver;
-	background-color: white;
+}
+
+.contact-section .card .items {
+	margin-top: 60px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.contact-section .card .item {
+	font-family: 'Helvetica';
+	line-height: 18px;
+	font-size: 12px;
+	color: rgb(0, 25, 109);
+	z-index: 2;
+	position: relative;
 }
 
 
@@ -39,43 +62,9 @@
 	right: 0;
 	top: 0;
 	height: 100%;
+	border: 1px solid silver;
 }
 
-
-.contact-section .card .card-body {
-	padding: 5px 10px;
-	position: relative;
-	z-index: 2;
-}
-
-.contact-section .card .card-body .item {
-	padding: 3px;
-}
-
-.contact-section .card .card-body .item i {
-	color: silver;
-	margin-right: 10px;
-	position: relative;
-	z-index: 2;
-}
-
-
-.contact-section .card .logo {
-	width: 300px;
-	position: relative;
-	z-index: 2;
-}
-
-.contact-section .card .title {
-	margin-bottom: 10px;
-	position: relative;
-	z-index: 2;
-}
-
-.contact-section .card .logan {
-	position: relative;
-	z-index: 2;
-}
 
 @media (max-width: 1000px){
 	.contact-section{
@@ -102,12 +91,5 @@
 		font-size: 8px;
 	}
 
-	.contact-section .card .card-body {
-		padding: 5px 5px;
-	}
-
-	.contact-section .card .logo {
-		width: 200px;
-	}
 
 }
