@@ -1,0 +1,113 @@
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+
+.contact-section{
+	height: calc(100vh - 252px);
+	min-height: 380px;
+	position: relative;
+	justify-content: flex-start;
+	text-align: left;
+	align-items: flex-start;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.contact-section h3.title{
+	margin: 0;
+}
+
+.contact-section .card-wrapper {
+	height: 100%;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+.contact-section .card {
+	font-size: 14px;
+	position: relative;
+	align-self: center;
+	padding: 20px 120px 20px 40px;
+	border: 1px solid silver;
+	background-color: white;
+}
+
+
+.contact-section .card .background-image{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+
+
+.contact-section .card .card-body {
+	padding: 5px 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.contact-section .card .card-body .item {
+	padding: 3px;
+}
+
+.contact-section .card .card-body .item i {
+	color: silver;
+	margin-right: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+
+.contact-section .card .logo {
+	width: 300px;
+	position: relative;
+	z-index: 2;
+}
+
+.contact-section .card .title {
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.contact-section .card .logan {
+	position: relative;
+	z-index: 2;
+}
+
+@media (max-width: 1000px){
+	.contact-section{
+		height: calc(100vh - 252px);
+	}
+
+	.contact-section h3.title{
+		margin-bottom: 0;
+	}
+}
+
+
+@media (max-width: 600px){
+	.contact-section{
+		height: calc(100vh - 218px);
+		min-height: 0;
+	}
+
+	.contact-section h3.title{
+		margin-bottom: 0;
+	}
+
+	.contact-section .card {
+		font-size: 8px;
+	}
+
+	.contact-section .card .card-body {
+		padding: 5px 5px;
+	}
+
+	.contact-section .card .logo {
+		width: 200px;
+	}
+
+}

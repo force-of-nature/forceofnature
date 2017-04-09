@@ -1,0 +1,68 @@
+
+/*--------------------
+ 	Feedback Section
+--------------------*/
+
+
+.feedback-section{
+	position: relative;
+	justify-content: flex-start;
+	min-height: 100vh;
+	text-align: left;
+	align-items: flex-start;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.feedback-section .quote{
+	text-align: left;
+	width: 80%;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 20px;
+	margin-left: 40px;
+  padding: 0;
+}
+
+.feedback-section .quote-marks {
+	font-size: 38px;
+	font-weight: 600;
+	color: silver;
+	line-height: 22px;
+}
+
+.feedback-section .author{
+    font-size: 18px;
+		font-weight: 200;
+    margin-bottom: 50px;
+		margin-left: 60px;
+		font-style: italic;
+		text-align: right;
+		color: grey;
+}
+
+.feedback-section .author:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px){
+
+	.feedback-section .quote{
+		font-size: 13px;
+		margin-left: 20px;
+		font-weight: 600;
+	}
+
+	.feedback-section .quote-marks {
+		font-size: 48px;
+		font-weight: 600;
+		color: #BBB;
+		line-height: 13px;
+	}
+
+	.feedback-section .author{
+	    font-size: 14px;
+			align-self: flex-end;
+			padding-right: 60px;
+	}
+
+}

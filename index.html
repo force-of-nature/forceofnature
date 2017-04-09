@@ -7,11 +7,17 @@
     <title>Force of Nature</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/feedback.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <link rel="stylesheet" href="assets/lib/jquery.modal.css">
+
 </head>
 
 <body class="persist-area">
-
-
 
 
 
@@ -45,37 +51,37 @@
 
 	<section class="home-section" id="home-section">
 		<div class="background-image small" id="background-image" style="background-image: url(assets/img/background_2.jpg);"></div>
-    <div class="background-image large" id="background-image-big" style="background-image: url(assets/img/background_2_big.jpg);"></div>
+        <div class="background-image large" id="background-image-big" style="background-image: url(assets/img/background_2_big.jpg);"></div>
 
-    <div class="home-menu-container">
-      <div class="menu">
-        <i id="home-menu-button" class="fa fa-bars"></i>
-      </div>
-    </div>
-
-    <div class="home-splash-container">
-      <div class="logo-splash">
-        <img src="assets/img/fon_logo.png" />
-        <h1>Gardens</h1>
-        <h3>Your residential garden management specialists</h3>
-        <br />
-      </div>
-      <div class="get-in-touch persist-header">
-        <div id="get-in-touch-logo" class="logo" onClick="scrollToSection('home');">
-          <img class="flat" src="assets/img/fon_logo_blue.png" />
-          <img class="stacked" src="assets/img/fon_logo_stacked_blue.png" />
+        <div class="home-menu-container">
+          <div class="menu">
+            <i id="home-menu-button" class="fa fa-bars"></i>
+          </div>
         </div>
-        <a id="get-in-touch-button" class="btn" onClick="scrollToSection('contact');">
-          Get in touch
-        </a>
-        <div id="get-in-touch-menu" class="menu">
-          <i class="fa fa-bars"></i>
-        </div>
-      </div>
-    </div>
 
-    <div class="home-footer">
-    </div>
+        <div class="home-splash-container">
+          <div class="logo-splash">
+            <h1 class="title">FORCE <span class="subscript">OF</span> NATURE</h1>
+            <h2>Gardens</h2>
+            <h3>Your residential garden management specialists</h3>
+            <br />
+          </div>
+          <div class="get-in-touch persist-header">
+            <div id="get-in-touch-logo" class="logo" onClick="scrollToSection('home');">
+              <img class="flat" src="assets/img/fon_logo_blue.png" />
+              <img class="stacked" src="assets/img/fon_logo_stacked_blue.png" />
+            </div>
+            <a id="get-in-touch-button" class="btn" onClick="scrollToSection('contact');">
+              Get in touch
+            </a>
+            <div id="get-in-touch-menu" class="menu">
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-footer">
+        </div>
 	</section>
 
 
@@ -92,29 +98,96 @@
       Whether a one-off tidyup, redevelopment, getting a property market ready, a redesign or on-going garden care, FORCE OF NATURE are 'your garden specialists'.
     </p>
 
+    <div class="grid">
+        <a href="plant-selection.html" rel="modal:open">
+            <div class="service" onClick="openServiceModal('plant-selection')" style="background-image: url(assets/img/services/plant-selection.jpg);">
+                <div class="title-container">
+                    <h1 class="title">Plant selection</h1>
+                </div>
+            </div>
+        </a>
+        <div class="service" style="background-image: url(assets/img/services/pruning-and-training.jpg);">
+            <div class="title-container">
+                <h1 class="title">Pruning and training</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/attracting-birds.jpg);">
+            <div class="title-container">
+                <h1 class="title">Attracting wildlife</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/plant-nutrition.jpg);">
+            <div class="title-container">
+                <h1 class="title">Plant nutrition</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/lawn.jpg);">
+            <div class="title-container">
+                <h1 class="title">Lawn installation and care</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/space-conscious-design.jpg);">
+            <div class="title-container">
+                <h1 class="title">Space conscious design</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/edible-plants.jpg);">
+            <div class="title-container">
+                <h1 class="title">Edible and fruiting plants</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/hedge-trimming.jpg);">
+            <div class="title-container">
+                <h1 class="title">Hedge trimming and health</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/creating-a-stylish-entrance.jpg);">
+            <div class="title-container">
+                <h1 class="title">Creating a stylish entrance</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/lush-outdoor-rooms.jpg);">
+            <div class="title-container">
+                <h1 class="title">Lush 'Outdoor Rooms'</h1>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(assets/img/services/potted-plants.jpg);">
+            <div class="title-container">
+                <h1 class="title">Potted plants</h1>
+            </div>
+        </div>
+    </div>
+
+
+<!--
+
     <ul class="grid">
 
       <li class="service">
-        <h2 class="service-title" onClick="showServiceDetail('plant-selection');">
-          <i style="color: #8484CB;" id="plant-selection-caret" class="fa fa-caret-right"></i>&nbsp;
-          Plant selection
-        </h2>
-        <div class="service-detail" id="plant-selection-detail">
-          <img class="service-image" src="assets/img/services/plant-selection.jpg" />
-          <p class="service-text">
-            Plants are amazing! They can live in extreme environments and harsh conditions all over the planet. They provide us with the essential elements of life such as food and oxygen to breathe as well as some of the most beautiful sights imaginable.
-            We will assist with suitable plant selections to enable them to flourish in their desired location and ensure your garden succeeds in reaching it's full potential.
-          </p>
+        <div class="service-image-container">
+            <img class="service-image" src="assets/img/services/plant-selection.jpg" />
+        </div>
+        <div class="service-detail-container">
+            <h2 class="service-title" onClick="showServiceDetail('plant-selection');">
+              <i style="color: #8484CB;" id="plant-selection-caret" class="fa fa-caret-right"></i>&nbsp;
+              Plant selection
+            </h2>
+            <div class="service-detail" id="plant-selection-detail">
+              <p class="service-text">
+                Plants are amazing! They can live in extreme environments and harsh conditions all over the planet. They provide us with the essential elements of life such as food and oxygen to breathe as well as some of the most beautiful sights imaginable.
+                We will assist with suitable plant selections to enable them to flourish in their desired location and ensure your garden succeeds in reaching it's full potential.
+              </p>
+            </div>
         </div>
       </li>
 
       <li class="service">
+        <img class="service-image" src="assets/img/services/pruning-and-training.jpg" />
         <h2 class="service-title" onClick="showServiceDetail('pruning-and-training');">
           <i style="color: #A17BC7" id="pruning-and-training-caret" class="fa fa-caret-right"></i>&nbsp;
           Pruning and training
         </h2>
         <div class="service-detail" id="pruning-and-training-detail">
-          <img class="service-image" src="assets/img/services/pruning-and-training.jpg" />
           <p class="service-text">
             Many plants and trees require specific pruning techniques to keep them in optimal health, at the desired shape or height, produce flowers and bushy thick growth or produce fruit.  Incorrect pruning and a lack of training can result in reduced crops, increased risks of pests and diseases and even plant failure/death.
             We are skilled in the various techniques required and want to see your garden succeed.
@@ -123,13 +196,13 @@
       </li>
 
       <li class="service">
+        <img class="service-image" src="assets/img/services/attracting-birds.jpg" />
         <h2 class="service-title" onClick="showServiceDetail('attracting-birds');">
             <i style="color: #D17BBC;" id="attracting-birds-caret" class="fa fa-caret-right"></i>&nbsp;
             <span class="long-name">Attracting birds, bees, butterflies and other wildlife</span>
             <span class="short-name">Attracting wildlife</span>
         </h2>
         <div class="service-detail" id="attracting-birds-detail">
-          <img class="service-image" src="assets/img/services/attracting-birds.jpg" />
           <p class="service-text">
             FORCE OF NATURE is passionate about the environment here on theHibiscus Coast. Being surrounded by bird sanctuaries, residential gardens are the perfect place to encourage native birds and butterflies using specific trees and shrubs, which offer nectar (important for bees too), berries and shelter.
             We will assist in selecting, planting and caring for these important food and shelter plants and turn your property into a flourishing oasis.
@@ -138,12 +211,12 @@
       </li>
 
       <li class="service">
+        <img class="service-image" src="assets/img/services/plant-nutrition.jpg" />
         <h2 class="service-title" onClick="showServiceDetail('plant-nutrition');">
           <i style="color: #F590A0" id="plant-nutrition-caret" class="fa fa-caret-right"></i>&nbsp;
           Plant nutrition
         </h2>
         <div class="service-detail" id="plant-nutrition-detail">
-          <img class="service-image" src="assets/img/services/plant-nutrition.jpg" />
           <p class="service-text">
             For plants and trees to succeed in any garden they require the correct nutrients needed  for root development, leaf growth, fruit and flower production and the internal processes which they carry out daily and seasonally.
             FORCE OF NATURE are fully trained in the nutrtional requirements of various trees and shrubs and we will manage these to enable them to reach their full potential.
@@ -152,13 +225,13 @@
       </li>
 
       <li class="service">
+        <img class="service-image" src="assets/img/services/lawn.jpg" />
         <h2 class="service-title" onClick="showServiceDetail('lawn');">
           <i style="color: #FFC196" id="lawn-caret" class="fa fa-caret-right"></i>&nbsp;
           <span class="long-name">Lawn installation and on going care</span>
           <span class="short-name">Lawn installation and care</span>
         </h2>
         <div class="service-detail" id="lawn-detail">
-          <img class="service-image" src="assets/img/services/lawn.jpg" />
           <p class="service-text">
             Lawn areas are an important design feature and require skill and technique to keep in constant good health for both use and aesthetics.
             FORCE OF NATURE will install, renovate and maintain top lawn standards, managing pests, diseases and weeds.
@@ -167,12 +240,12 @@
       </li>
 
       <li class="service">
+        <img class="service-image" src="assets/img/services/space-conscious-design.jpg" />
         <h2 class="service-title" onClick="showServiceDetail('space-conscious-design');">
           <i style="color: #FFD896" id="space-conscious-design-caret" class="fa fa-caret-right"></i>&nbsp;
           Space conscious design
         </h2>
         <div class="service-detail" id="space-conscious-design-detail">
-          <img class="service-image" src="assets/img/services/space-conscious-design.jpg" />
           <p class="service-text">
             Stunning designs and green training techniques can be used to accentuate or disguise walls and fence lines. Areas which capture excessive heat over summer and appear hard and life barren can be transformed into a living feature or extend existing sculptural designs used in a building's architecture.
           </p>
@@ -180,12 +253,12 @@
       </li>
 
       <li class="service">
+      <img class="service-image" src="assets/img/services/edible-plants.jpg" />
         <h2 class="service-title" onClick="showServiceDetail('edible-plants');">
           <i style="color: #FFE896" id="edible-plants-caret" class="fa fa-caret-right"></i>&nbsp;
           Edible plants and fruiting plants
         </h2>
         <div class="service-detail" id="edible-plants-detail">
-          <img class="service-image" src="assets/img/services/edible-plants.jpg" />
           <p class="service-text">
             Grow your own supplies of fresh vegetables, herbs and superfoods and eat straight off the plant. Have your food grown your way, avoiding nasty chemicals used in commercial growing.
             Invest in plants and avoid expensive food prices while helping reduce transport carbon footprints.
@@ -263,7 +336,7 @@
           </p>
         </div>
       </li>
-    </div>
+    </div> -->
   </section>
 
 
@@ -314,11 +387,7 @@
 
 
   <section class="about-section" id="about-section">
-
-		<img class="background-image large" src="assets/img/fon_background.jpg" />
-    <img class="background-image medium" src="assets/img/fon_background_1200.jpg" />
-    <img class="background-image medium-small" src="assets/img/fon_background_800.jpg" />
-    <img class="background-image small" src="assets/img/fon_background_600.jpg" />
+      <img class="background-image" src="assets/img/vines_cutout_long.jpg" />
 
     <h3 class="title">About</h3>
     <p>
@@ -466,7 +535,6 @@
 
          var paralax = offset / viewHeight * 100;
 
-        //  backgroundImage.css({ 'top': '-' + paralax * 2 + 'px' });
          backgroundImageBig.css({ 'top': '-' + paralax * 2 + 'px' });
        }
 
@@ -558,11 +626,19 @@
           var caret = $('#' + serviceName + '-caret');
           caret.attr('class', 'fa fa-caret-' + (visible ? 'right' : 'down'));
 
-          // detailSection.css('display', visible ? 'none' : 'inline-block');
           detailSection.css('max-height', visible ? '0px' : '1000px');
         }
 
     });
+  </script>
+
+<script src="assets/lib/jquery.modal.js" ></script>
+
+  <script>
+      var openServiceModal = function(service) {
+
+
+      }
   </script>
 
 

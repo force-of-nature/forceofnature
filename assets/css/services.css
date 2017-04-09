@@ -1,0 +1,80 @@
+
+/*--------------------
+ 	Services Section
+---------------------*/
+
+.services-section {
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+}
+
+.services-section p {
+	padding: 0 40px;
+}
+
+.services-section > * {
+	position: relative;
+	z-index: 2;
+}
+
+.services-section .background-image{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20%;
+	z-index: 1;
+	opacity: 0.3;
+}
+
+.services-section .grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+}
+
+.services-section .grid div {
+	flex-direction: row;
+}
+
+.services-section .grid .service {
+	height: 333px;
+	width: 333px;
+	margin: 3px;
+	cursor: pointer;
+    background-size: 100% 100%;
+	opacity: 1;
+	transition:all 0.2s;
+}
+
+.services-section .grid .service:hover{
+	background-size: 105% 105%;
+	opacity: .9;
+}
+
+.services-section .grid .service .title-container {
+	background-color: rgba(230, 230, 230, .9);
+	position: relative;
+	bottom: 0;
+	padding: 10px;
+}
+
+.services-section .grid .service .title-container .title {
+	color: rgb(98, 146, 237);
+	font-weight: 200;
+}
+
+
+
+@media (max-width: 1000px){
+
+}
+
+
+@media (max-width: 600px){
+
+
+
+
+}

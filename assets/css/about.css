@@ -1,0 +1,27 @@
+
+/*--------------------
+ 	About Section
+---------------------*/
+
+.about-section{
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+}
+
+.about-section .background-image{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20%;
+	z-index: 1;
+	opacity: 0.3;
+}
+
+.about-section * {
+	z-index: 2;
+}
+
+.about-section h1{
+	margin-bottom: 15px;
+}
