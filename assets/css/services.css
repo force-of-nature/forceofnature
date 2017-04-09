@@ -71,6 +71,10 @@
 	font-weight: 400;
 }
 
+.modal .modal-detail-image {
+	width: 100%;
+}
+
 .modal h2 {
 	margin-top: 20px;
 	margin-bottom: 20px;
