@@ -65,6 +65,20 @@
 	font-weight: 200;
 }
 
+.modal .modal-detail-title {
+	color: rgb(98, 146, 237);
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.modal h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.modal p {
+	margin-bottom: 20px;
+}
 
 
 @media (max-width: 1000px){
